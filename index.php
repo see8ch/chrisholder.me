@@ -41,7 +41,7 @@
 						<a target="_blank" href="http://learnwp.chrisholder.me">Website<span class="genericon genericon-external"></span></a>
 					</li>
 				</ul>
-				<img class="preview" src="<?php echo $preloadIMG; ?>" data-src="assets/img/work/learnwp-preview.jpg">
+				<img class="preview" src="<?php echo $preloadIMG; ?>" data-src="assets/img/work/learnwp-preview.png">
 			</div>
 
 			<!-- Swallow Hill -->
@@ -166,7 +166,6 @@
 
 
 
-
 			<!-- // *** ARCHIVE *** // -->
 
 
@@ -279,15 +278,15 @@
 	 			<h6 class="project-meta">Public Speaking // <span>Develop Denver</span></h6>
 				<p>A presentation that introduced an audience at Develop Denver to Sass basics and some more advanced tricks. The presentation is web based and written in HTML/JS/Sass.</p>
 				<ul>
-<!-- 					<li>
+					<li>
 						<a class="preview-toggle" href="#">Preview<span class="genericon genericon-show"></span></a>
-					</li> -->
+					</li>
 					<li>
 						<a target="_blank" href="assets/demos/sasstronauts">Website<span class="genericon genericon-external"></span></a>
 					</li>
 				</ul>
 
-				<img class="preview" src="<?php echo $preloadIMG; ?>" data-src="assets/img/work/whatsinseason-preview.png">
+				<img class="preview" src="<?php echo $preloadIMG; ?>" data-src="assets/img/work/sasstronauts-preview.png">
 			</div>
 
 			<div class="button-wrap">
