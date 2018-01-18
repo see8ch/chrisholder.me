@@ -1,0 +1,36 @@
+// ==========================================================================
+// View layout
+// Use when you need to quickly see your grid structure
+// ==========================================================================
+
+
+// ==========================================================================
+// Mixin
+// ==========================================================================
+
+@mixin mark($color) {
+	outline: 4px solid rgba($color, 0.25) !important;
+	background-color: rgba($color, 0.15) !important;
+}
+
+// ==========================================================================
+// Elements to mark
+// ==========================================================================
+
+.row {
+	@include mark(blue);
+}
+[class*="span"] {
+	@include mark(red);
+}
+
+html:after {
+  content:"";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  z-index: 99;
+  border-right: 4px rgba(blue, 0.25) solid;
+}

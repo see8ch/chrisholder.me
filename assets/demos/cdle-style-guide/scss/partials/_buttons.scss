@@ -1,0 +1,80 @@
+// ==========================================================================
+// Buttony button buttons
+// ==========================================================================
+
+.button,
+.button:visited {
+    display: inline-block;
+    border: 1px solid darken(#495573,15%);
+    padding: 0.6785714286em 1.3571428571em; // 9.5/14 19/14
+    @include border-radius(4px);
+    font-size: 21px;
+    color: #dcedf5;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+    @include gradient(#6f84b4,#415d9c);
+    @include box-shadow( 0 0px 0 rgba(255,255,255,0.4), inset 0 1px 1px rgba(255,255,255,0.3));
+}
+
+.button:hover {
+    color: #fff;
+    @include gradient(#7a97da,#4e75ce);
+}
+
+.button:active {
+    color: #fff;
+    @include gradient(#4e75ce,#7a97da);
+    @include box-shadow(rgba(0,0,0,0.4) 0 0px 0, inset rgba(0,0,0,0.4) 0 1px 0);
+}
+
+// ==========================================================================
+// Form buttons
+// ==========================================================================
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    border: 1px solid #0a3c59;
+    padding: 0.6785714286em 1.3571428571em; // 9.5/14 19/14
+    @include border-radius(4px);
+    font-size: 0.875em; // 14/16
+    color: #dcedf5;
+    text-shadow: 0 -1px 0 #2d6982;
+    @include gradient(#54b2de,#277ca3);
+    @include box-shadow(rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0);
+}
+
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    border: 1px solid #0a3c59;
+    color: #fff;
+    text-shadow: #1e4158 0 -1px 0;
+    @include gradient(#65c4f0,#3089b0);
+}
+
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+    border: 1px solid #0a3c59;
+    color: #fff;
+    text-shadow: #1e4158 0 -1px 0;
+    @include gradient(#3089b0,#65c4f0);
+    @include box-shadow(rgba(0,0,0,0.4) 0 0px 0, inset rgba(0,0,0,0.4) 0 1px 0);
+}
+
+// Disabled buttons
+button[disabled],
+input[disabled],
+input[disabled]:hover {
+    border: 1px solid #999;
+    padding: 0.6785714286em 1.3571428571em; // 9.5/14 19/14
+    @include border-radius(4px);
+    font-size: 0.875em; // 14/16
+    color: #aaa;
+    text-shadow: none;
+    @include gradient(#eee,#ccc);
+    @include box-shadow(rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0);
+}

@@ -1,0 +1,1 @@
+(function(e){e(".view").click(function(){e(this).toggleClass("show");return!1})})(jQuery);

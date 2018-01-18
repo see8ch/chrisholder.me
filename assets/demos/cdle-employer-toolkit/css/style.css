@@ -1,0 +1,524 @@
+/* #Reset
+================================================================================================= */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Colors
+================================================================================================= */
+/* Transition Times
+================================================================================================= */
+/* Novecento
+================================================================================================= */
+@font-face {
+  font-family: 'Novecentowide-Bold';
+  src: url("/fonts/novecento/25DFFC_0_0.eot");
+  src: url("/fonts/novecento/25DFFC_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_0_0.woff") format("woff"), url("/fonts/novecento/25DFFC_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Novecentowide-Light';
+  src: url("/fonts/novecento/25DFFC_1_0.eot");
+  src: url("/fonts/novecento/25DFFC_1_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_1_0.woff") format("woff"), url("/fonts/novecento/25DFFC_1_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Novecentowide-DemiBold';
+  src: url("/fonts/novecento/25DFFC_2_0.eot");
+  src: url("/fonts/novecento/25DFFC_2_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_2_0.woff") format("woff"), url("/fonts/novecento/25DFFC_2_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Novecentowide-Book';
+  src: url("/fonts/novecento/25DFFC_3_0.eot");
+  src: url("/fonts/novecento/25DFFC_3_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_3_0.woff") format("woff"), url("/fonts/novecento/25DFFC_3_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Novecentowide-Normal';
+  src: url("/fonts/novecento/25DFFC_4_0.eot");
+  src: url("/fonts/novecento/25DFFC_4_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_4_0.woff") format("woff"), url("/fonts/novecento/25DFFC_4_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Novecentowide-Medium';
+  src: url("/fonts/novecento/25DFFC_5_0.eot");
+  src: url("/fonts/novecento/25DFFC_5_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_5_0.woff") format("woff"), url("/fonts/novecento/25DFFC_5_0.ttf") format("truetype"); }
+
+/* Open Sans
+================================================================================================= */
+/* Media - Fluid Images - Video
+======================================================= */
+figure {
+  margin: 0; }
+
+img, object, embed, video {
+  max-width: 100%;
+  _width: 100%; }
+
+/* Fluid images */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+/* Improve IE's resizing of images */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Correct IE9 overflow */
+img {
+  height: auto; }
+
+/* Base Styles
+======================================================= */
+a {
+  color: #f68080;
+  -webkit-transition: all 666ms ease-in-out;
+  -moz-transition: all 666ms ease-in-out;
+  -o-transition: all 666ms ease-in-out;
+  -ms-transition: all 666ms ease-in-out;
+  transition: all 666ms ease-in-out; }
+  a:focus, a:hover, a:active {
+    outline: 0; }
+  a:hover {
+    color: #9eb2c0; }
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 0.35em;
+  color: #f68080;
+  font-family: 'Open Sans';
+  font-weight: 800;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 4em; }
+
+h2 {
+  font-size: 3em; }
+
+h3 {
+  font-size: 2.25em; }
+
+h4 {
+  font-size: 1.75em; }
+
+h5 {
+  font-size: 1em; }
+
+/* Body
+======================================================= */
+body {
+  height: 100%;
+  background: #e2ebf1;
+  overflow-x: hidden;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 62.5%;
+  color: #7f99ac; }
+
+/* Content
+======================================================= */
+.content-wrapper {
+  width: 85%;
+  max-width: 1130px;
+  margin: 50px auto 180px auto;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 #a8bcca; }
+
+header {
+  width: 100%;
+  margin-bottom: 90px;
+  background: #c1cfd9; }
+
+.headline {
+  text-align: center;
+  width: 100%; }
+  .headline p {
+    width: 65%;
+    margin: 0 auto 40px auto;
+    font-size: 1.7em;
+    line-height: 23px;
+    text-align: left; }
+
+a .toolkit-btn {
+  font-family: 'Open Sans';
+  font-weight: 800;
+  font-size: 2.25em;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  background: #9eb4c4;
+  box-shadow: 4px 4px 0 0 #7692a6;
+  padding: 20px 0;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+  a .toolkit-btn:hover {
+    background: #829eb2;
+    box-shadow: 4px 4px 0 0 #628196; }
+  a .toolkit-btn:active {
+    box-shadow: 0px 0px 0 0 #628196; }
+a .active {
+  background: #f68989;
+  box-shadow: 4px 4px 0 0 #f46868; }
+  a .active:hover {
+    background: #f57171;
+    box-shadow: 4px 4px 0 0 #f24b4b; }
+  a .active:active {
+    box-shadow: 0px 0px 0 0 #f24b4b; }
+a input[type=radio] {
+  float: left;
+  position: absolute;
+  top: -9999px;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; }
+
+.top-btns-wrap {
+  width: 100%;
+  margin: 0 0 20px 14%;
+  display: inline-block;
+  clear: both; }
+  .top-btns-wrap .toolkit-btn {
+    float: left;
+    width: 35%;
+    margin-right: 2%; }
+
+.toggle-content {
+  width: 72%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  line-height: 19px;
+  margin-bottom: 40px;
+  display: none; }
+  .toggle-content .entry-toggle h4 {
+    background: #f4f7f9;
+    width: 96%;
+    padding: 2%;
+    margin-bottom: 0;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #7f99ac;
+    font-size: 1.05em;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out; }
+    .toggle-content .entry-toggle h4:hover {
+      background: #d8e4ec;
+      color: #708da2; }
+    .toggle-content .entry-toggle h4:after {
+      content: "▼";
+      position: relative;
+      float: right;
+      top: 2px;
+      margin-right: 10px; }
+  .toggle-content .active h4 {
+    background: #7f99ac;
+    color: white; }
+    .toggle-content .active h4:after {
+      content: "▲"; }
+    .toggle-content .active h4:hover {
+      background: #628196;
+      color: white; }
+  .toggle-content .entry {
+    background: #f4f7f9;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    margin-bottom: 30px; }
+    .toggle-content .entry .list-header {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+      margin-top: 18px; }
+    .toggle-content .entry p, .toggle-content .entry ol, .toggle-content .entry ul {
+      font-size: 17px;
+      line-height: 28px; }
+    .toggle-content .entry p {
+      margin: 0 4% 20px 4%; }
+    .toggle-content .entry ol, .toggle-content .entry ul {
+      margin: 0 7% 10px 7%; }
+  .toggle-content .tools-entry {
+    display: none; }
+
+#audit p span {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: italic; }
+
+#misclassification .list-header {
+  margin-bottom: 20px !important;
+  margin-top: 40px !important; }
+#misclassification .misclass-list-1 {
+  margin-bottom: 25px !important; }
+#misclassification .list-divider {
+  margin-top: 9px !important;
+  margin-bottom: 9px !important;
+  font-style: italic; }
+#misclassification .misclass-list-2 li {
+  margin-bottom: 15px;
+  margin-top: -9px; }
+
+#verify ol {
+  margin-bottom: 23px !important; }
+  #verify ol li {
+    margin-bottom: 15px !important; }
+
+.reports-chart-header {
+  width: 68.8%;
+  margin: 38px auto 0 auto !important;
+  padding: 16px 3%;
+  background: #7f99ac;
+  color: #f4f7f9;
+  font-size: 12px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center; }
+
+.reports-chart {
+  width: 72%;
+  margin: 0 auto 40px auto;
+  background: #e9f0f4;
+  padding: 1px 10px 18px;
+  border: 1px solid #c1cfd9; }
+  .reports-chart .list-header {
+    margin-bottom: 2px !important;
+    margin-top: 13px !important;
+    font-size: 90% !important;
+    font-weight: 900 !important;
+    color: #7f99ac;
+    text-transform: uppercase; }
+    .reports-chart .list-header span {
+      float: right; }
+  .reports-chart ul {
+    margin: 0 4% 10px 4% !important; }
+    .reports-chart ul li {
+      list-style: none;
+      margin-bottom: 6px;
+      font-size: 82%; }
+      .reports-chart ul li span {
+        float: right; }
+
+.second-head {
+  margin-top: 80px; }
+  .second-head p {
+    margin: 0 auto 30px auto; }
+
+.bottom-btn-wrap {
+  width: 100%;
+  text-align: center;
+  clear: both;
+  display: block;
+  margin-bottom: 40px; }
+  .bottom-btn-wrap .toolkit-btn {
+    width: 72%;
+    margin: 0 auto; }
+
+#resources h4 {
+  margin-bottom: 10px;
+  font-family: 'Open Sans';
+  font-weight: 800; }
+#resources .entry {
+  padding-bottom: 15px !important;
+  padding: 15px 0;
+  margin-bottom: 10px !important; }
+  #resources .entry:hover {
+    background: #e2ebf1; }
+  #resources .entry p {
+    margin-bottom: 0 !important;
+    font-weight: 700;
+    font-size: 15px; }
+    #resources .entry p span {
+      float: right; }
+      #resources .entry p span a {
+        font-family: 'Open Sans';
+        font-weight: 700; }
+        #resources .entry p span a:after {
+          position: relative;
+          top: 1px;
+          margin-left: 6px;
+          content: "Download";
+          font-family: 'SSStandard'; }
+#resources .resource-entry:hover {
+  background-color: #f4f7f9 !important; }
+#resources #forms {
+  display: none; }
+#resources #prints {
+  display: none;
+  margin-top: 10px; }
+#resources .note {
+  text-align: right;
+  margin-top: 20px; }
+
+/* Footer
+======================================================= */
+.footer-logo-wrapper {
+  text-align: center;
+  margin-top: 130px;
+  padding-bottom: 78px; }
+  .footer-logo-wrapper .footer-logo {
+    width: 220px;
+    margin-left: -16px; }
+
+.footer-bar {
+  width: 100%;
+  height: 11px;
+  background: #f9a3a3;
+  box-shadow: 0 -18px 0 30px #c1cfd9; }
+
+.copyright {
+  margin-bottom: 20px;
+  text-align: center; }
+
+/* Extras
+======================================================= */
+.go-top {
+  display: none;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  padding: 1em 1em 0.75em 1em;
+  background-color: rgba(158, 178, 192, 0.4);
+  font-family: 'SSStandard';
+  font-size: 12px;
+  color: white;
+  text-decoration: none; }
+
+.first {
+  margin-left: 0; }
+
+.last {
+  margin-right: 0; }
+
+/* Selection Colors
+======================================================= */
+::selection {
+  background: #f9a3a3;
+  color: white; }
+
+::-moz-selection {
+  background: #f9a3a3;
+  color: white; }
+
+/* RESPONSIVE
+============================================================================================== */
+/* Retina-specific stuff here */
+@media screen and (max-width: 1230px) {
+  #resources .entry p {
+    font-size: 14px; } }
+@media screen and (max-width: 1140px) {
+  #resources .entry p {
+    font-size: 13px; } }
+@media screen and (max-width: 1024px) {
+  .content-wrapper {
+    width: 90%; }
+
+  .headline p {
+    width: 70%; }
+
+  .top-btns-wrap {
+    margin-left: 10%; }
+
+  .top-btns-wrap .toolkit-btn {
+    width: 38.75%; }
+
+  .toggle-content {
+    width: 80%; }
+
+  .reports-chart-header {
+    width: 76%; }
+
+  .reports-chart {
+    width: 79%; }
+
+  .bottom-btn-wrap .toolkit-btn {
+    width: 80%; }
+
+  #resources .entry p {
+    font-size: 14px; }
+
+  .go-top {
+    right: 0.545em; } }
+/* General small screen Mobile */
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    margin-top: 35px;
+    margin-bottom: 60px; }
+
+  .toolkit-btn {
+    font-size: 1.7em !important; }
+
+  .toggle-content .entry ol {
+    margin: 0 9% 10px 9%; } }
+/* Other Sizes */
+@media screen and (max-width: 320px) {
+  .content-wrapper {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px; }
+
+  header {
+    margin-bottom: 50px; }
+
+  .top-btns-wrap .toolkit-btn {
+    width: 80%;
+    margin-bottom: 20px; }
+
+  .toggle-content .entry-toggle h4 {
+    width: 90%;
+    padding: 5%;
+    font-size: 12px; }
+    .toggle-content .entry-toggle h4:after {
+      display: none; }
+    .toggle-content .entry-toggle h4:before {
+      content: "▼";
+      position: relative;
+      float: right;
+      top: 2px;
+      margin-right: 10px; }
+
+  .toggle-content .entry p {
+    margin: 0 9% 20px 9%; }
+
+  .toggle-content .entry ol, .toggle-content .entry ul {
+    margin: 0 7% 10px 16%; }
+
+  .reports-chart-header, .reports-chart {
+    display: none; }
+
+  .second-head {
+    margin-top: 30px; }
+
+  #resources .entry p {
+    font-size: 13px; }
+    #resources .entry p span {
+      margin-left: 8px;
+      float: none; } }
+/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */

@@ -1,0 +1,85 @@
+
+
+/* RESPONSIVE
+============================================================================================== */
+
+/* Retina-specific stuff here */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {}
+
+@media screen and (max-width: 1230px) {
+	#resources .entry p {font-size:14px;}
+}
+
+@media screen and (max-width: 1140px) {
+	#resources .entry p {font-size:13px;}
+}
+
+// Small Desktops and iPad Landscape
+@media screen and (max-width: 1024px) {
+	.content-wrapper {width:90%;}
+	.headline p {width: 70%;}
+	.top-btns-wrap {margin-left:10%;}
+	.top-btns-wrap	.toolkit-btn {width:38.75%;}
+	.toggle-content {width:80%;}
+	.reports-chart-header {width:76%;}
+	.reports-chart {width:79%;}
+	.bottom-btn-wrap .toolkit-btn {width: 80%;}
+	#resources .entry p {font-size:14px;}
+	.go-top {right: 0.545em;}
+}
+
+
+/* General small screen Mobile */
+@media screen and (max-width: 768px) {
+	.content-wrapper {margin-top:35px; margin-bottom:60px;}
+	.toolkit-btn {font-size: 1.7em !important;}
+	.toggle-content .entry ol {margin:0 9% 10px 9%;}
+}
+
+/* Other Sizes */
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 320px) {
+	.content-wrapper {
+		width:100%;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	header {margin-bottom: 50px;}
+	.top-btns-wrap .toolkit-btn {
+		width: 80%;
+		margin-bottom: 20px;
+	}
+	.toggle-content .entry-toggle h4 {
+		width: 90%;
+		padding: 5%;
+		font-size:12px;
+
+		&:after {display:none;}
+		&:before {
+			content:"▼";
+			position: relative;
+			float:right;
+			top: 2px;
+			margin-right: 10px;
+		}
+	}
+	.toggle-content .entry p {margin: 0 9% 20px 9%;}
+	.toggle-content .entry ol, .toggle-content .entry ul {margin: 0 7% 10px 16%;}
+	.reports-chart-header, .reports-chart {display:none;}
+	.second-head {margin-top: 30px;}
+	#resources .entry p {
+		font-size:13px;
+		span {margin-left:8px; float:none;}
+	}
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {}
+

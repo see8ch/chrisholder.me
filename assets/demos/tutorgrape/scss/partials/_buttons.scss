@@ -1,0 +1,149 @@
+// Shadow Buttons
+@mixin shadow-button-color($light-color,$shadow-color,$hover-light,$hover-shadow) {
+    $toggle-box-shadow: 3px 3px 0;
+    $toggle-text-shadow: 2px 2px 0;
+
+    background-color: $light-color;
+    text-shadow:$toggle-text-shadow $shadow-color;
+    box-shadow:$toggle-box-shadow $shadow-color;
+
+    &:hover {
+        background-color: $hover-light;
+        text-shadow:$toggle-text-shadow $hover-shadow;
+        box-shadow:$toggle-box-shadow $hover-shadow;
+    }
+}
+
+@mixin shadow-button ($button-color: purple, $symbol: "", $font-size: 15px, $button-width: 100%) {
+
+    @if $button-color == purple {
+        @include shadow-button-color($P4, $P3, $P3, $P2);
+    }
+
+    @else if $button-color == green {
+        @include shadow-button-color($T4, $T3, $T3, $T2);
+    }
+
+    @else if $button-color == red {
+        @include shadow-button-color($R4, $R3, $R3, $R2);
+    }
+
+    @else if $button-color == blue {
+        @include shadow-button-color($B4, $B3, $B3, $B2);
+    }
+
+    @else if $button-color == orange {
+        @include shadow-button-color($O4, $O3, $O3, $O2);
+    }
+
+    position: relative;
+    display: block;
+    width:$button-width;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: $clouds;
+    font-size: $font-size;
+    $line-height: ($font-size * 2.66);
+    line-height: $line-height;
+    padding-top:$line-height / 13.3;
+
+    @include transition (all 400ms ease-in-out);
+    @extend %ms5;
+
+    &:after {
+        margin-left:10px;
+        vertical-align: middle;
+        content:"#{$symbol}";
+        color:$G4;
+        text-align:right;
+        font-family:SSStandard;
+    }
+}
+
+
+
+
+// Toggle Buttons
+@mixin toggle-shadow-button-color($light-color,$shadow-color,$hover-light,$hover-shadow,$checked-color,$checked-shadow) {
+    $toggle-box-shadow: 4px 4px 0;
+    $toggle-text-shadow: 2px 2px 0;
+
+    background-color: $light-color;
+    text-shadow:$toggle-text-shadow $shadow-color;
+    box-shadow:$toggle-box-shadow $shadow-color;
+
+    &:hover {
+        background-color: $hover-light;
+        text-shadow:$toggle-text-shadow $hover-shadow;
+        box-shadow:$toggle-box-shadow $hover-shadow;
+    }
+
+    &.checked {
+        background-color: $checked-color;
+        text-shadow:$toggle-text-shadow $checked-shadow;
+        box-shadow:$toggle-box-shadow $checked-shadow;
+    }
+}
+
+@mixin toggle-button ($button-color: purple, $symbol: "", $font-size: 15px) {
+
+    @if $button-color == purple {
+        @include toggle-shadow-button-color($P4, $P3, $P3, $P2,$O4,$O3);
+    }
+
+    @else if $button-color == green {
+        @include toggle-shadow-button-color($T4, $T3, $T3, $T2,$P4,$P3);
+    }
+
+    @else if $button-color == red {
+        @include toggle-shadow-button-color($R4, $R3, $R3, $R2,$T4,$T3);
+    }
+
+    @else if $button-color == blue {
+        @include toggle-shadow-button-color($B4, $B3, $B3, $B2,$R4,$R3);
+    }
+
+    @else if $button-color == orange {
+        @include toggle-shadow-button-color($O4, $O3, $O3, $O2,$P4,$P3);
+    }
+
+    position: relative;
+    display: block;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: $clouds;
+    font-size: $font-size;
+    line-height: $font-size * 2.66;
+
+    @include transition (all 400ms ease-in-out);
+
+    label {@extend %ms5;}
+
+    input {
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    &.checked {
+        &:after {
+            content:"#{$symbol}";
+            color:$G4;
+            text-align:right;
+            vertical-align: middle;
+        }
+
+        &.inactive {
+            background-color:$G2;
+            color:$G3;
+        }
+    }
+}
+

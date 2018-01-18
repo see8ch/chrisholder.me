@@ -1,0 +1,116 @@
+// ==========================================================================
+// Global variables
+// Use when creating a variable used through multiple sheets
+// ==========================================================================
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+
+// Flat UI Colors
+
+$turquoise:#1abc9c;
+$green-sea:#16a085;
+
+$emerald:#1abc9c;
+$nephritis:#16a085;
+//$emerald:#2ecc71;
+//$nephritis:#27ae60;
+
+$peter-river:#3498db;
+$belize-hole:#2980b9;
+
+$amethyst:#9b59b6;
+$wisteria:#8e44ad;
+
+$wet-asphalt:#34495e;
+$midnight-blue:#2c3e50;
+
+$sunflower:#f1c40f;
+
+$orange:#f39c12;
+$carrot:#e67e22;
+$pumpkin:#d35400;
+
+$alizarin:#e74c3c;
+$pomegranate:#c0392b;
+
+$clouds:#ecf0f1;
+$silver:#bdc3c7;
+$concrete:#95a5a6;
+$asbestos:#7f8c8d;
+
+// Turquoise
+$T5:#18b99a;
+$T4:#0fa285;
+$T3:#00896e;
+$T2:#066e59;
+$T1:#095b4b;
+
+// Purple
+$P5:#a76faf;
+$P4:#945aa5;
+$P3:#88489c;
+$P2:#66387d;
+$P1:#5b2e70;
+
+// Orange
+$O5:#fab04f;
+$O4:#f69e1d;
+$O3:#e87f24;
+$O2:#d35727;
+$O1:#bd4126;
+
+// Blue
+$B5:#58b0e1;
+$B4:#3797d3;
+$B3:#2381bb;
+$B2:#14709d;
+$B1:#0f6490;
+
+// Slate
+$S5:#65849c;
+$S4:#486378;
+$S3:#344a5f;
+$S2:#2b3e51;
+$S1:#233442;
+
+// Red
+$R4:#e84c3c;
+$R3:#d0382f;
+$R2:#c03127;
+$R1:#af2724;
+
+// Yellow
+$Y4:#f7d25c;
+$Y3:#f1c416;
+$Y2:#e1b124;
+$Y1:#d6a429;
+
+// Grey
+$G4:#eef3f4;
+$G3:#bdc2c7;
+$G2:#95a5a6;
+$G1:#808e8e;
+
+
+
+
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+$normal: normal; // Change these values when using custom fonts
+$bold: bold;
+
+$monospace: 'courier new', monospace;
+$serif: Georgia, "Times New Roman", Times, serif;
+$sans: Helvetica, Arial, sans-serif;
+// $icon: Arial, sans-serif; // Use with an icon font
+
+
+// Museo
+%ms7 {font-family:'museo_slab700';}
+%ms5 {font-family:'museo_slab500';}
+%ms3 {font-family:'museo300';}

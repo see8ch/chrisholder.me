@@ -1,0 +1,84 @@
+// Clearfix
+@mixin clearfix {
+ *zoom: 1;
+
+ &:after { clear: both; }
+
+ &:after,
+ &:before {
+  content: '';
+  display: table;
+ }
+}
+
+
+
+
+// Ease
+@mixin ease($time:333ms, $el: all, $anim: ease-in-out) {
+	transition: $el $time $anim;
+}
+
+
+
+// Responsive
+$breakpoints: (
+  'phone':   ( max-width:  600px ),
+  'tablet':  ( max-width:  800px ),
+  'laptop': ( max-width:  1024px ),
+  'large':  ( min-width: 1500px )
+);
+
+@mixin breakpoint($name) {
+      @if map-has-key($breakpoints, $name) {
+        @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Couldn't find a breakpoint named `#{$name}`.";
+  }
+}
+
+
+
+// Vertical Alignment
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+// Background Images
+@mixin background-image($attachment: fixed) {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: $attachment !important;
+
+  // Attachment scroll on mobile and unsupported browsers
+  html.touch & { background-attachment: scroll !important; }
+}
+
+
+
+// Override Webkit
+@mixin no-webkit {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
+
+  &:focus, &:active {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}

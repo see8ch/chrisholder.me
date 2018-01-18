@@ -1,0 +1,473 @@
+/* Media - Fluid Images - Video
+======================================================= */
+figure {margin: 0}
+img, object, embed, video {max-width: 100%;	_width: 100%} /* Fluid images */
+img {border: 0;	-ms-interpolation-mode: bicubic} /* Improve IE's resizing of images */
+svg:not(:root) {overflow: hidden} /* Correct IE9 overflow */
+img {height: auto;}
+
+
+/* Base Styles
+======================================================= */
+
+a {
+	color:$red-2;
+	@include ease-600;
+
+	&:focus, &:hover, &:active {outline: 0;}
+	&:hover {color:$blue-4;}
+}
+
+h1, h2, h3, h4, h5 {
+	margin-bottom:0.35em;
+
+	color:$red-2;
+	@include os-8;
+	text-transform:uppercase;
+}
+
+h1 {font-size:4em;}
+h2 {font-size:3em;}
+h3 {font-size:2.25em;}
+h4 {font-size:1.75em;}
+h5 {font-size:1em;}
+
+
+
+/* Body
+======================================================= */
+
+body {
+	height: 100%;
+	background:darken($blue-2, 2%);
+	overflow-x:hidden;
+
+	@include os-3;
+	font-size:62.5%;
+	color:$blue-4-2;
+}
+
+
+/* Content
+======================================================= */
+
+.content-wrapper {
+	width:85%;
+	max-width:1130px;
+	margin:50px auto 180px auto;
+	background:white;
+	overflow:hidden;
+
+	// Content Shadow
+	box-shadow:0 0 10px 0 lighten(#95ADBE, 6%);
+}
+
+
+////----------	Header		----------////
+
+header {
+	width:100%;
+	margin-bottom:90px;
+	background:$blue-3;
+}
+
+
+////----------	Page Elements	----------////
+
+.headline {
+	text-align:center;
+	width:100%;
+
+   p {
+		width: 65%;
+		margin: 0 auto 40px auto;
+
+		font-size: 1.7em;
+		line-height: 23px;
+		text-align: left;
+	}
+}
+
+
+////----------	Toolkit Sections	----------////
+
+$width:100%;
+$btn-width:36%;
+$btn-margin:($width - ($btn-width * 2)) / 2;
+$spacer:2%;
+
+$btn-shadow:4px 4px 0 0;
+
+
+// Button Style
+a {
+	.toolkit-btn {
+		@include os-8;
+		font-size:2.25em;
+		color:white;
+		text-transform: uppercase;
+		text-align: center;
+
+		background:darken($blue-3, 11%);
+		box-shadow:$btn-shadow darken($blue-4, 13%);
+		padding: 20px 0;
+		cursor: pointer;
+		@include ease-300;
+
+		&:hover {
+			background:darken($blue-3, 20%);
+			box-shadow:$btn-shadow darken($blue-4, 20%);
+		}
+
+		&:active {box-shadow:0px 0px 0 0 darken($blue-4, 20%);}
+	}
+	.active {
+		background:lighten($red-2, 2%);
+		box-shadow:$btn-shadow lighten($red-3, 2%);
+
+		&:hover {
+			background:darken($red-2, 3%);
+			box-shadow:$btn-shadow darken($red-3, 4%);
+		}
+		&:active {box-shadow:0px 0px 0 0 darken($red-3, 4%);}
+	}
+	// Hiding Input
+	input[type=radio] {
+		float:left;
+	   position: absolute;
+	   top: -9999px;
+	   left: 0;
+	   margin:0;
+	   width: 100%;
+	   height: 100%;
+	   opacity: 0;
+	}
+}
+
+// Top Buttons Wrapper
+.top-btns-wrap {
+	width:$width;
+	margin:0 0 20px $btn-margin;
+	display:inline-block;
+	clear:both;
+
+	.toolkit-btn {
+		float: left;
+		width:35%;
+		margin-right:2%;
+	}
+}
+
+
+// Toggled-Entry Contents
+.toggle-content {
+	width:$btn-width * 2;
+	margin:0 auto;
+	font-size: 1.5em;
+	line-height:19px;
+	margin-bottom:40px;
+	display:none;
+
+	.entry-toggle {
+		// Closed Entry Headline/Toggle Button
+		h4 {
+			$padding:2%;
+
+			background:$blue-1;
+			width:100% - ($padding * 2);
+			padding: $padding;
+			margin-bottom:0;
+			margin-top:20px;
+			cursor:pointer;
+
+			@include os-7;
+			color:$blue-4-2;
+			font-size:1.05em;
+
+			@include ease-250;
+
+			&:hover {
+				background:darken($blue-2, 5%);
+				color:darken($blue-4-2, 5%);
+			}
+
+			&:after {
+				content:"▼";
+				position: relative;
+				float:right;
+				top: 2px;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	// Active Entry Headline
+	.active h4 {
+		background:$blue-4-2;
+		color:white;
+
+		&:after {
+			content:"▲";
+		}
+
+		&:hover {
+			background:darken($blue-4-2, 10%);
+			color:white;
+		}
+	}
+
+	.entry {
+		background:$blue-1;
+		padding-bottom:20px;
+		padding-top:15px;
+		margin-bottom:30px;
+
+		.list-header {
+			font-weight:700;
+			text-transform: uppercase;
+			margin-bottom:2px;
+			margin-top:18px;
+		}
+
+		p, ol, ul {
+			font-size: 17px;
+			line-height: 28px;
+		}
+
+		p {margin: 0 4% 20px 4%;}
+
+		ol, ul {margin:0 7% 10px 7%;}
+	}
+	.tools-entry {display:none;}
+}
+
+
+////---------- Specific Toggle Content ----------////
+
+// Audits
+#audit {
+	p {
+		span {@include os-3-i;}
+	}
+}
+
+// Misclassification Toggle
+#misclassification {
+
+	.list-header {
+		margin-bottom: 20px !important;
+		margin-top: 40px !important;
+	}
+
+	.misclass-list-1 {margin-bottom:25px !important;}
+
+	.list-divider {
+		margin-top: 9px !important;
+		margin-bottom: 9px !important;
+		font-style: italic;
+	}
+
+	.misclass-list-2 {
+		li {
+			margin-bottom:15px;
+			margin-top:-9px;
+		}
+	}
+}
+
+// Employee Verification Toggle
+#verify {
+	ol {
+		margin-bottom:23px !important;
+
+		li {margin-bottom:15px !important;}
+	}
+}
+
+// Reports Section
+.reports-chart-header {
+	width:68.8%;
+	margin: 38px auto 0 auto !important;
+	padding:16px 3%;
+	background:$blue-4-2;
+
+	color:$blue-1;
+	font-size:12px !important;
+	font-weight:700;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+.reports-chart {
+	width:72%;
+	margin:0 auto 40px auto;
+	background:$blue-2;
+	padding:1px 10px 18px;
+	border:1px solid $blue-3;
+
+	.list-header {
+		margin-bottom: 2px !important;
+		margin-top: 13px !important;
+
+		font-size:90% !important;
+		font-weight: 900 !important;
+		color:$blue-4-2;
+		text-transform: uppercase;
+
+		span {float:right;}
+	}
+
+	ul {
+		margin: 0 4% 10px 4% !important;
+
+		li {
+			list-style:none;
+			margin-bottom: 6px;
+			font-size:82%;
+
+			span {float:right;}
+		}
+	}
+}
+
+////-- End Toggle Controls --////
+
+
+
+//-------- Bottom Section --------//
+ .second-head {
+ 	margin-top:80px;
+
+ 	p {margin:0 auto 30px auto;}
+}
+
+// Bottom Button Wrapper
+.bottom-btn-wrap {
+	width:$width;
+	text-align:center;
+	clear:both;
+	display:block;
+	margin-bottom: 40px;
+
+	.toolkit-btn {
+		width:$btn-width * 2;
+		margin:0 auto;
+	}
+}
+
+
+//-------- Resources Section --------//
+#resources {
+	h4 {
+		margin-bottom: 10px;
+		@include os-8;
+	}
+
+	.entry {
+		padding-bottom:15px !important;
+		padding:15px 0;
+		margin-bottom: 10px !important;
+
+		&:hover {background:darken($blue-2, 2%);}
+
+		p {
+			margin-bottom:0 !important;
+			font-weight:700;
+			font-size:15px;
+
+			span {
+				float:right;
+
+				a {
+					@include os-7;
+
+					&:after {
+						position: relative;
+						top: 1px;
+						margin-left:6px;
+
+						content:"Download";
+						font-family:'SSStandard';
+					}
+				}
+			}
+		}
+	}
+	.resource-entry {
+		&:hover {background-color:$blue-1 !important;}
+	}
+
+	#forms {display:none;}
+	#prints {display:none; margin-top:10px;}
+
+	.note {
+		text-align:right;
+		margin-top:20px;
+	}
+}
+
+
+
+/* Footer
+======================================================= */
+
+.footer-logo-wrapper {
+	text-align:center;
+	margin-top:130px;
+	padding-bottom:78px;
+
+	.footer-logo {
+		width:220px;
+		margin-left: -16px;
+	}
+}
+
+.footer-bar {
+	width:100%;
+	height:11px;
+	background:$red-1;
+	box-shadow:0 -18px 0 30px $blue-3;
+}
+
+.copyright {
+	margin-bottom:20px;
+	text-align:center;
+}
+
+
+
+/* Extras
+======================================================= */
+
+// Scroll to Top
+.go-top {
+	display: none;
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	padding: 1em 1em 0.75em 1em;
+	background-color: rgba(158,178,192,0.4);
+
+	font-family:'SSStandard';
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+}
+
+// FIrst & Last Overrides
+.first {margin-left:0;}
+.last {margin-right:0;}
+
+
+
+/* Selection Colors
+======================================================= */
+::selection {
+	background:$red-1;
+	color:white;
+}
+
+::-moz-selection {
+	background:$red-1;
+	color:white;
+}

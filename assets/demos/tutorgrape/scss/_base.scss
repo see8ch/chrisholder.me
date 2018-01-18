@@ -1,0 +1,129 @@
+// ==========================================================================
+//  Base styles: opinionated defaults
+// ==========================================================================
+
+// Sets box-sizing default to border-box on all elements
+* {
+    @include box-sizing();
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    background: $T5;
+
+    font-size: 62.5%;
+    line-height: 1.4;
+    @extend %ms3;
+    color:$T3;
+}
+
+// (highlight color, text color)
+@include selection();
+
+// ==========================================================================
+// Headings
+// ==========================================================================
+
+h1,
+h2 {
+    @extend %ms7;
+}
+h3,
+h4,
+h5,
+h6 {
+    @extend %ms5;
+}
+
+
+// ==========================================================================
+// Links
+// ==========================================================================
+
+a {
+    color: $T2;
+    @include transition(color .2s);
+    text-decoration: none;
+
+    &:visited {
+        color: $T2;
+    }
+    &:hover {
+        color: $T2;
+    }
+    &:focus {
+        outline: thin dotted;
+    }
+}
+
+// ==========================================================================
+// Basic block-level elements
+// ==========================================================================
+
+address {
+    margin: 0 0 1.5em;
+}
+
+// ==========================================================================
+// Text-level markup
+// ==========================================================================
+
+abbr[title],
+acronym {
+    cursor: help;
+}
+
+ins {
+    background: $G4;
+    text-decoration: none;
+}
+
+// ==========================================================================
+// Media elements
+// ==========================================================================
+
+// Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+img {
+    vertical-align: middle;
+}
+
+// ==========================================================================
+// Lists
+// ==========================================================================
+
+dt {
+    font-weight: $bold;
+}
+
+// ==========================================================================
+// Forms
+// ==========================================================================
+
+// Remove default fieldset styles.
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+// Allow only vertical resizing of textareas.
+textarea {
+    resize: vertical;
+}
+
+// A better looking default horizontal rule
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $G4;
+    margin: 1em 0;
+    padding: 0;
+}

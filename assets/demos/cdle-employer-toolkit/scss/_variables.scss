@@ -1,0 +1,48 @@
+
+/* Colors
+================================================================================================= */
+
+$blue-1:#F4F7F9;
+$blue-2:#e9f0f4;
+$blue-3:#c1cfd9;
+$blue-4:#9eb2c0;
+$blue-4-2:darken(#9eb2c0, 10%);
+$blue-5:#242e39;
+
+$red-1:#f9a3a3;
+$red-2:lighten(#f57676, 2%);
+$red-3:darken($red-2, 7%);
+
+
+
+/* Transition Times
+================================================================================================= */
+
+
+@mixin ease-600 {
+	$time:666ms;
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: all $time ease-in-out;
+	-o-transition: all $time ease-in-out;
+	-ms-transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
+}
+
+@mixin ease-300 {
+	$time:300ms;
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: all $time ease-in-out;
+	-o-transition: all $time ease-in-out;
+	-ms-transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
+}
+
+@mixin ease-250 {
+	$time:250ms;
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: all $time ease-in-out;
+	-o-transition: all $time ease-in-out;
+	-ms-transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
+}
+

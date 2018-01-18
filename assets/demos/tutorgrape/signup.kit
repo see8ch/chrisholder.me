@@ -1,0 +1,134 @@
+<!-- $title = Complete Your Profile - tutorgrape -->
+<!-- $body = default-->
+
+<!-- @include include/_head.kit -->
+<!-- @include include/_chromeframe.kit -->
+
+<!-- @include include/_nav.kit -->
+
+		<!-- Notice -->
+		<div class="row">
+			<div class="span10 notice">
+				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel.<span class="ss-icon">close</span></p>
+			</div>
+		</div>
+		<!-- End Notice -->
+
+
+		<!-- Profile Module -->
+		<!-- Profile Photo -->
+		<div class="row">
+			<div class="span10 signup-confirmation-photo">
+					<img alt="00000000000000000" src="img/default_user_photo.png">
+			</div>
+		</div>
+		<!-- End Profile Photo -->
+
+		<!-- Profile Info -->
+		<div class="row">
+			<div class="span10 signup-confirmation-wrapper">
+
+				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+
+				<form accept-charset="UTF-8" action="/profiles/2" class="simple_form edit_profile" id="edit_profile_2" method="post">
+
+					<div style="margin:0;padding:0;display:inline">
+						<input name="utf8" type="hidden" value="✓">
+						<input name="_method" type="hidden" value="put">
+						<input name="authenticity_token" type="hidden" value="XqlmQEn5MumQZKjNCaBQBhYh4mpKjYnkRZqsgJa+ViI=">
+					</div>
+<div class="row">
+					<!-- Email -->
+					<div class="input email optional profile_email span5 first">
+						<label class="email optional" for="profile_email">Email</label>
+						<input class="string email optional" id="profile_email" maxlength="255" name="profile[email]" size="50" type="email" placeholder="Email Address">
+					</div>
+					<!-- End Email -->
+
+					<!-- First Name -->
+					<div class="input string optional profile_first_name span5 last">
+						<label class="string optional" for="profile_first_name">First name</label>
+						<input class="string optional" id="profile_first_name" maxlength="255" name="profile[first_name]" size="50" type="text" placeholder="First Name">
+					</div>
+					<!-- End First Name -->
+</div>
+<div class="row">
+					<!-- Last Name -->
+					<div class="input string optional profile_last_name span5 first">
+						<label class="string optional" for="profile_last_name">Last name</label>
+						<input class="string optional" id="profile_last_name" maxlength="255" name="profile[last_name]" size="50" type="text" placeholder="Last Name">
+					</div>
+					<!-- End Last Name -->
+
+					<!-- Age -->
+					<div class="input string optional profile_age span5 last">
+						<label class="string optional" for="profile_age">Age</label>
+						<input class="string optional" id="profile_age" maxlength="255" name="profile[age]" size="50" type="text" placeholder="Age">
+					</div>
+					<!-- End Age -->
+</div>
+<div class="row">
+					<!-- Corporation -->
+					<div class="input string optional profile_corporation span5 first">
+						<label class="string optional" for="profile_corporation">Employer</label>
+						<input class="string optional" id="profile_corporation" maxlength="255" name="profile[corporation]" size="50" type="text" placeholder="Employer">
+					</div>
+					<!-- End Corporation -->
+
+					<!-- Job Title -->
+					<div class="input string optional profile_job_title span5 last">
+						<label class="string optional" for="profile_job_title">Job Title</label>
+						<input class="string optional" id="profile_job_title" maxlength="255" name="profile[job_title]" size="50" type="text" placeholder="Job Title">
+					</div>
+					<!-- End Job Title -->
+</div>
+<div class="row">
+					<!-- Location -->
+					<div class="input string optional profile_location span5 first">
+						<label class="string optional" for="profile_location">Location</label>
+						<input class="string optional" id="profile_location" maxlength="255" name="profile[location]" size="50" type="text" placeholder="Location">
+					</div>
+					<!-- End Location -->
+
+					<!-- Photo URL -->
+					<div class="input string optional profile_photo span5 last">
+						<label class="string optional" for="profile_photo">Photo URL</label>
+						<input class="string optional" id="profile_photo" maxlength="255" name="profile[photo]" size="50" type="text" placeholder="Photo URL">
+					</div>
+					<!-- End Photo URL -->
+</div>
+<div class="row">
+					<!-- Password Module -->
+					<!-- Get User Info -->
+					<input id="user_username" name="user[username]" type="hidden" value="{:value=&gt;&quot;first name here last name here&quot;}">
+					<input id="user_email" name="user[email]" type="hidden" value="{:value=&gt;&quot;chris@thecodemotel.com&quot;}">
+					<!-- End Get User Info -->
+
+					<!-- Password -->
+					<div class="field span5 first">
+						<label for="password">Password</label>
+						<input id="user_password" name="user[password]" type="password" placeholder="Password">
+					</div>
+					<!-- End Password -->
+
+					<!-- Confirm Password -->
+					<div class="field span5 last">
+						<label for="password_confirmation">Password Confirmation</label>
+						<input id="user_password_confirmation" name="user[password_confirmation]" type="password" placeholder="Confirm Password">
+					</div>
+					<!-- End Confirm Password -->
+					<!-- End Password Module -->
+</div>
+<div class="row">
+					<!-- Submit Button -->
+					<input class="button confirm-button" name="commit" type="submit" value="Next Step">
+					<!-- End Submit -->
+				</form>
+			</div>
+		</div>
+		<!-- End Profile Info -->
+		<!-- End Profile Module -->
+</div>
+
+
+<!-- @include include/_footer.kit -->

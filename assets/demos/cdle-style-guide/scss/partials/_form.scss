@@ -1,0 +1,196 @@
+// Below, you can choose from either using global form styles or class-driven
+// form styles. By default, the global styles are on.
+
+// ==========================================================================
+// Global form elements
+// ==========================================================================
+
+form {
+    max-width: 600px;
+    padding:20px;
+    border: 1px solid #95a1ae;
+    @include border-radius(9px);
+    @include gradient(#e4eff5, #d4e4eb);
+    @include box-shadow(rgba(000,000,000,0.3) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0);
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+input[type="text"],
+textarea {
+    margin-bottom:20px;
+    padding:8px;
+    border: 1px solid #a6b7c0;
+    @include border-radius(3px);
+    color: #a6b7c0;
+    background: #f3f6f8;
+    @include box-shadow(rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px);
+}
+
+input {
+    &.input-wide {
+        width: 100%;
+    }
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    background: #fff;
+    color: #5c6671;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+}
+
+// ==========================================================================
+// Widget form elements
+// ==========================================================================
+
+.widgets {
+    form {
+        position: relative;
+        padding:0;
+        border: none;
+        background: transparent;
+        @include border-radius(0);
+        @include box-shadow(none);
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        p {
+            position: relative;
+            margin: 0;
+
+            &:hover {
+                label {
+                    //top: -35px;
+                }
+            }
+        }
+    }
+    p label {
+        display: inline-block;
+        position: absolute;
+        min-width: 110px;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        padding: 6px 13px;
+        color: #565962;
+        font-size: 16px;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.28);
+        background: #1c2129;
+        @include transition(all .2s ease-in-out);
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        position: relative;
+        margin-bottom:20px;
+        padding: 9px 0 7px 120px;
+        width: 100%;
+        border: none;
+        @include border-radius(0);
+        color: #676a6e;
+        font-size: 16px;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.54);
+//        text-indent: 112px;
+        background: #20252d;
+        @include box-shadow(none);
+        @include transition(color .2s ease-in-out, background .2s ease-in-out, padding .2s ease-in-out);
+
+        &.tight {
+            margin-bottom: 2px;
+        }
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        z-index: 1;
+        padding-left: 8px;
+        text-indent: 0;
+        color: #141a23;
+        text-shadow: 0 1px 0 rgba(255,255,255,.2);
+        background: #b6bdca;
+        outline: none;
+    }
+    textarea {
+        width: 100%;
+        min-height: 107px;
+    }
+    input[type="submit"],
+    button {
+        border-color: #1a1e28;
+        padding: 0.6785714286em 1.3571428571em; // 9.5/14 19/14
+        @include border-radius(0);
+        font-size: 0.875em; // 14/16
+        color: #5b626f;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.28);
+        @include gradient(#333940,#20262e);
+        @include box-shadow(none);
+    }
+    input[type="submit"]:hover,
+    input[type="submit"]:active,
+    button:hover,
+    button:active {
+        border-color: #1a1e28;
+        color: #7f889d;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.28);
+        @include gradient(#48526d,#38425f);
+    }
+    .textarea {
+        width: 100%;
+        background: #1c2129;
+    }
+    textarea {
+        padding: 40px 13px 9px 13px;
+        width: 100%;
+        @include transition(color .2s ease-in-out, background .2s ease-in-out, padding .2s ease-in-out);
+    }
+    textarea:focus {
+        padding: 10px 13px 9px 13px;
+    }
+}
+
+// ==========================================================================
+// Global form elements
+// ==========================================================================
+
+// .form-container {
+//    max-width: 600px;
+//    padding:20px;
+//    border: 1px solid #95a1ae;
+//    @include border-radius(9px);
+//    @include gradient(#e4eff5, #d4e4eb);
+//    @include box-shadow(rgba(000,000,000,0.3) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0);
+//}
+
+//.form-field {
+//    margin-bottom:20px;
+//    padding:8px;
+//    border: 1px solid #a6b7c0;
+//    @include border-radius(3px);
+//    color: #a6b7c0;
+//    background: #f3f6f8;
+//    @include box-shadow(rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px);
+//}
+
+// textarea.form-field {
+//    width: 100%;
+//}
+
+//.form-field:focus {
+//    background: #fff;
+//    color: #5c6671;
+//    outline: none;
+//}

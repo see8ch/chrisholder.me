@@ -1,0 +1,124 @@
+
+// ==========================================================================
+// Horizontal menu!
+//
+// Include basic functionality and dropdowns.
+//
+// Add the tag .nav-horizontal to the top level ul and, BOOM, done!
+// ==========================================================================
+
+.nav-bar {
+    @include epic-sides(){border-bottom:2px solid $T4;}
+
+    img {
+        width:80%;
+        height:auto;
+        margin:13px 0;
+    }
+}
+
+.nav-horizontal {
+    text-align: right;
+    margin-top:27px;
+
+    a {
+        display:block;
+        padding: 0.4375em 0.8125em; // 7/16 13/16
+        color: $T3;
+
+        @include transition (all 400ms ease-in-out);
+
+        &:visited {
+            color: $T3;
+        }
+
+        &:hover {
+            color: $G4;
+            text-decoration: none;
+            background:$O4;
+            box-shadow:3px 3px 0 $O3;
+        }
+    }
+
+    li {
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        @include transition (all 400ms ease-in-out);
+
+        > ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 20em; // 200/16
+            margin: 0;
+            padding: 0;
+            background:$T4;
+
+            @include transition (all 400ms ease-in-out);
+
+            a {
+                &:hover {
+                    padding-left: 1em;
+                }
+            }
+        }
+
+        li > ul {
+            left: 100%;
+            top: 0;
+        }
+
+        &:hover > ul {
+            display: block;
+        }
+    }
+
+    > ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        > li {
+            float: left;
+            font-size: 1.5em;
+        }
+    }
+}
+
+.login-dropdown {
+    margin-left:13px;
+    margin-top: -4px;
+
+    .login-email {margin-top:25px;}
+
+    a {
+        @include shadow-button (purple, user, 15px, 100%);
+        padding: 0 2em 0;
+        height:36px;
+
+        &:visited {color:$G4;}
+    }
+
+    ul {box-shadow:3px 3px 0 $T3; }
+
+    input {
+        width:85%;
+        border:none;
+        line-height:40px;
+        margin-bottom:10px;
+        text-indent:10px;
+
+        @extend %ms5;
+    }
+
+    .login-button {
+        margin:0 auto 23px auto;
+        text-indent:0;
+
+        @include transition (all 400ms ease-in-out);
+        @include shadow-button (purple, right, 1em, 85%);
+    }
+}
+

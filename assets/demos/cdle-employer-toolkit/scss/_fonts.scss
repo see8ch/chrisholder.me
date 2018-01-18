@@ -1,0 +1,30 @@
+
+/* Novecento
+================================================================================================= */
+@import "fonts/_novecento";
+
+@mixin n-bold { font-family:'Novecentowide-Bold'; }
+@mixin n-demi { font-family:'Novecentowide-Demibold'; }
+@mixin n-med { font-family:'Novecentowide-Medium'; }
+@mixin n-book { font-family:'Novecentowide-Book'; }
+@mixin n-norm { font-family:'Novecentowide-Normal'; }
+@mixin n-light { font-family:'Novecentowide-Light'; }
+
+
+
+/* Open Sans
+================================================================================================= */
+@mixin os-8 {font-family:'Open Sans';font-weight:800;}
+@mixin os-8-i {font-family:'Open Sans';font-weight:800;font-style:italic;}
+
+@mixin os-7 {font-family:'Open Sans';font-weight:700;}
+@mixin os-7-i {font-family:'Open Sans';font-weight:700;font-style:italic;}
+
+@mixin os-6 {font-family:'Open Sans';font-weight:600;}
+@mixin os-6-i {font-family:'Open Sans';font-weight:600;font-style:italic;}
+
+@mixin os-4 {font-family:'Open Sans';font-weight:400;}
+@mixin os-4-i {font-family:'Open Sans';font-weight:400;font-style:italic;}
+
+@mixin os-3 {font-family:'Open Sans';font-weight:300;}
+@mixin os-3-i {font-family:'Open Sans';font-weight:300;font-style:italic;}

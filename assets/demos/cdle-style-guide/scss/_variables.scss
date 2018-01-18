@@ -1,0 +1,73 @@
+// ==========================================================================
+// Global variables
+// Use when creating a variable used through multiple sheets
+// ==========================================================================
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+
+//Example: $white: #fff; 
+$bg-blue: #7086bb url(../img/bg/bg-blue.jpg);
+$bg-hr-blue: #7086bb url(../img/bg/bg-blue_@2X.jpg);
+
+$bg-darkblue: #1c2337 url(../img/bg/bg-darkblue.jpg);
+$bg-hr-darkblue: #1c2337 url(../img/bg/bg-darkblue_@2X.jpg);
+
+$bg-red: #b5451e url(../img/bg/bg-red.jpg);
+$bg-hr-red: #b5451e url(../img/bg/bg-red_@2X.jpg);
+
+$bg-yellow: #eab045 url(../img/bg/bg-yellow.jpg);
+$bg-hr-yellow: #eab045 url(../img/bg/bg-yellow_@2X.jpg);
+
+$bg-white: #f1f4f4 url(../img/bg/bg-white.jpg);
+$bg-hr-white: #f1f4f4 url(../img/bg/bg-white_@2X.jpg);
+
+$bg-grey: #dedfe0 url(../img/bg/bg-grey.jpg);
+$bg-hr-grey: #dedfe0 url(../img/bg/bg-grey_@2X.jpg);
+
+$bg-mediumgrey: #dedfe0 url(../img/bg/bg-mediumgrey.jpg);
+$bg-hr-mediumgrey: #dedfe0 url(../img/bg/bg-mediumgrey_@2X.jpg);
+
+$bg-darkgrey: #282c35 url(../img/bg/bg-darkgrey.jpg);
+$bg-hr-darkgrey: #282c35 url(../img/bg/bg-darkgrey_@2X.jpg);
+
+$bg-darkestgrey: #232730 url(../img/bg/bg-darkestgrey.jpg);
+$bg-hr-darkestgrey: #232730 url(../img/bg/bg-darkestgrey_@2X.jpg);
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+@font-face {
+    font-family: 'novecento_widebook';
+    src: url('../fonts/novecentowide-book-webfont.eot');
+    src: url('../fonts/novecentowide-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/novecentowide-book-webfont.woff') format('woff'),
+         url('../fonts/novecentowide-book-webfont.ttf') format('truetype'),
+         url('../fonts/novecentowide-book-webfont.svg#novecento_widebook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'novecento_widemedium';
+    src: url('../fonts/novecentowide-medium-webfont.eot');
+    src: url('../fonts/novecentowide-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/novecentowide-medium-webfont.woff') format('woff'),
+         url('../fonts/novecentowide-medium-webfont.ttf') format('truetype'),
+         url('../fonts/novecentowide-medium-webfont.svg#novecento_widemedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$normal: 400; // Change these values when using custom fonts
+$bold: 700;
+
+// 'Open Sans' 300 400 400i 600 700 700i
+
+$monospace: 'courier new', monospace;
+$serif: Georgia, "Times New Roman", Times, serif;
+$sans: 'Open Sans', Helvetica, Arial, sans-serif;
+$symbol: Arial, sans-serif;
+$novecento-book: 'novecento_widebook', 'Open Sans', Helvetica, Arial, sans-serif;
+$novecento-medium: 'novecento_widemedium', 'Open Sans', Helvetica, Arial, sans-serif;

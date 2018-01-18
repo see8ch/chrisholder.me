@@ -1,0 +1,767 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"text",
+				"text-indent"
+			],
+			[
+				"dark-green",
+				"dark-green-input-fields"
+			],
+			[
+				"inline",
+				"inline-table"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"big",
+				"bigicon_experiment"
+			],
+			[
+				"time",
+				"time"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.kit",
+			"settings":
+			{
+				"buffer_size": 2300,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "tutor-profile.kit",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "dashboard.kit",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_sass/form/_base.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_sass/form/_style.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_sass/form/_dashboard.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_include/_head.kit",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_include/_footer.kit",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_include/_nav.kit",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_sass/components/_breakpoint.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_sass/main.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "_sass/_components.scss",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 327.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/TutorGrape/_objects/_login-obj.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/_objects/_logo.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/_objects/_nav-list.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/_include/_login-list.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/styles/style.css",
+		"/Applications/MAMP/htdocs/TutorGrape/_sass/form/_dashboard.scss",
+		"/Applications/MAMP/htdocs/TutorGrape/_sass/form/_base.scss",
+		"/Applications/MAMP/htdocs/TutorGrape/_sass/form/_style.scss",
+		"/Applications/MAMP/htdocs/TutorGrape/tutorgrape.sublime-project",
+		"/Applications/MAMP/htdocs/TutorGrape/_include/_footer.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/_include/_head.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/tutor-profile.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/index.kit",
+		"/Users/chrislholder/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Applications/MAMP/htdocs/TutorGrape/dashboard.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/tutor-dashboard.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/tutor-selector.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/_sass/_structure.scss",
+		"/Applications/MAMP/htdocs/TutorGrape/_sass/_flatuicolors.scss",
+		"/Applications/MAMP/htdocs/TutorGrape/_sass/components/_core.scss",
+		"/Applications/MAMP/htdocs/TutorGrape/_sass/components/_grid.scss",
+		"/Applications/MAMP/htdocs/TutorGrape/_sass/components/_normalize.scss",
+		"/Applications/MAMP/htdocs/TutorGrape/_sass/form/_view-layout.scss",
+		"/Applications/MAMP/htdocs/TutorGrape/_sass/form/_swipe-styles.scss",
+		"/Applications/MAMP/htdocs/TutorGrape/_sass/_config.scss",
+		"/Applications/MAMP/htdocs/TutorGrape/_sass/_components.scss",
+		"/Applications/MAMP/htdocs/thecodemotel/index.html",
+		"/Applications/MAMP/htdocs/TutorGrape/fonts/museo/stylesheet.css",
+		"/Users/chrislholder/Desktop/webfontkit-20130602-054111/stylesheet.css",
+		"/Applications/MAMP/htdocs/TutorGrape/styles/font-awesome/font-awesome.min.css",
+		"/Applications/MAMP/htdocs/see8ch/include/_head.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/include/_nav.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/include/_head.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/include/_footer.kit",
+		"/Applications/MAMP/htdocs/TutorGrape/_js/scripts.js",
+		"/Applications/MAMP/htdocs/TutorGrape/_sass/components/_breakpoint.scss",
+		"/Applications/MAMP/htdocs/tutor-profile.kit",
+		"/Applications/MAMP/htdocs/see8ch/scss/_variables.scss",
+		"/Users/chrislholder/Documents/Dropbox/_Asset Library/Web/UI/Flat-UI/index.html",
+		"/Users/chrislholder/Documents/Dropbox/_Asset Library/Web/UI/Flat-UI/sass/modules/_toggle.sass",
+		"/Applications/MAMP/htdocs/Tutorgrape/_sass/_components.scss",
+		"/Applications/MAMP/htdocs/Tutorgrape/_sass/_flatuicolors.scss",
+		"/Applications/MAMP/htdocs/see8ch/index.kit",
+		"/Applications/MAMP/htdocs/see8ch/include/_nav.kit",
+		"/Applications/MAMP/htdocs/Tutorgrape/index.php",
+		"/Applications/MAMP/htdocs/Tutorgrape/include/_footer.kit",
+		"/Applications/MAMP/htdocs/Tutorgrape/index.kit",
+		"/Applications/MAMP/htdocs/Tutorgrape/include/_head.kit",
+		"/Applications/MAMP/htdocs/Tutorgrape/include/_nav.kit",
+		"/Applications/MAMP/htdocs/Tutorgrape/_sass/main.scss",
+		"/Applications/MAMP/htdocs/see8ch/contact.kit",
+		"/Applications/MAMP/htdocs/Tutorgrape/include/index.kit",
+		"/Users/chrislholder/Documents/Dropbox/_Asset Library/Web/UI/Flat-UI/sass/modules/_palette.sass",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/_variables.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/_main.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/_base.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/style.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/partials/_nav-horizontal.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/partials/_grid-responsive.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/partials/_form.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/partials/_buttons.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/partials/_menu-hamburger.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/index.kit",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/_print.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/_mixins.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/_media-queries.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/include/_footer.kit",
+		"/Applications/MAMP/htdocs/tutorgrape/include/_head.kit",
+		"/Applications/MAMP/htdocs/tutorgrape/include/_nav.kit",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/_normalize.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/_ie.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/_chrome-frame.scss",
+		"/Applications/MAMP/htdocs/tutorgrape/scss/_helper.scss",
+		"/Applications/MAMP/htdocs/see8ch/lab/logo.kit",
+		"/Applications/MAMP/htdocs/see8ch/work/c4l.kit",
+		"/Applications/MAMP/htdocs/see8ch/work/colorado.kit",
+		"/Applications/MAMP/htdocs/see8ch/spec.kit",
+		"/Applications/MAMP/htdocs/see8ch/scss/_columns.scss",
+		"/Applications/MAMP/htdocs/see8ch/scss/_logo.scss",
+		"/Applications/MAMP/htdocs/see8ch/scss/homepage.scss",
+		"/Applications/MAMP/htdocs/see8ch/scss/resume.scss",
+		"/Applications/MAMP/htdocs/see8ch/scss/style.scss",
+		"/Applications/MAMP/htdocs/see8ch/include/_head-sub.kit",
+		"/Volumes/Macintosh HD/Applications/MAMP/htdocs/see8ch/scss/style.scss",
+		"/Applications/MAMP/htdocs/see8ch/scss/_nav.scss",
+		"/Applications/MAMP/htdocs/see8ch/scss/_type.scss",
+		"/Applications/MAMP/htdocs/see8ch/scss/_colors.scss",
+		"/Applications/MAMP/htdocs/see8ch/scss/_reset.scss",
+		"/Volumes/Macintosh HD/Applications/MAMP/htdocs/see8ch/css/logo.scss",
+		"/Volumes/Macintosh HD/Applications/MAMP/htdocs/see8ch/css/type.scss",
+		"/Volumes/Macintosh HD/Applications/MAMP/htdocs/see8ch/css/colors.scss",
+		"/Applications/MAMP/htdocs/see8ch/css/style.css",
+		"/Applications/MAMP/htdocs/see8ch/css/homepage.css",
+		"/Applications/MAMP/htdocs/see8ch/css/resume.css",
+		"/Volumes/Macintosh HD/Applications/MAMP/htdocs/see8ch/css/resume.scss",
+		"/Applications/MAMP/htdocs/see8ch/css/header.css",
+		"/Applications/MAMP/htdocs/see8ch/work.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"feature",
+			"green-input",
+			"transition",
+			"center",
+			"}",
+			"{",
+			"The",
+			"Experiment Name",
+			"h4",
+			"col6",
+			"col12",
+			"\n			",
+			"}\n",
+			"position-description col12",
+			"darkgray",
+			"#24ad5f",
+			"transition",
+			"#95A5A6",
+			"#e0e0e0",
+			"#F39C12",
+			"open",
+			"novecento",
+			"font-family: 'Novecentowide-Medium';",
+			"font-family:'Novecentowide-Medium';",
+			"font-family: 'Novecentowide-Demibold';",
+			"font-family:'Novecentowide-Demibold';",
+			"font-family: 'Novecentowide-Demibold';",
+			"font-family:'Novecentowide-Demibold';",
+			"font-family:'Novecentowide-Bold';",
+			"font-family: 'Novecentowide-Bold';",
+			"@include n-bold",
+			"font-family: 'Novecentowide-Bold';",
+			"font-family:'Novecentowide-Bold';",
+			"#eee",
+			"#7F8C8D",
+			"#34495E",
+			"#2ECC71"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.kit",
+					"settings":
+					{
+						"buffer_size": 2300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1011,
+								1011
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 689.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tutor-profile.kit",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "dashboard.kit",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "_sass/form/_base.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1584.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_sass/form/_style.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_sass/form/_dashboard.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "_include/_head.kit",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "_include/_footer.kit",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "_include/_nav.kit",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 9,
+					"file": "_sass/components/_breakpoint.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "_sass/main.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "_sass/_components.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.548208618164,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.729545976132,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": false
+}

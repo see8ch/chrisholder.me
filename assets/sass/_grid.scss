@@ -1,0 +1,68 @@
+
+// Grid Settings
+$row-width: 72vw;
+// $row-max-width: 700px;
+$row-margin: ((100vw - $row-width) / 2);
+$row-spacing: 7vh;
+$column-padding: 2vw;
+
+
+.row {
+	float: left;
+	width: $row-width;
+	margin-right: $row-margin;
+	margin-left: $row-margin;
+	margin-bottom: $row-spacing;
+	// max-width: $row-max-width;
+	@include clearfix;
+}
+
+.column {
+	float: left;
+	padding: $column-padding $column-padding ($column-padding * 1.5);
+	width: $row-width;
+	@include clearfix;
+
+	&.one-half { width: $row-width / 2; }
+	&.one-third { width: $row-width / 3; }
+	&.one-fourth { width: $row-width / 4; }
+	&.one-fifth { width: $row-width / 5; }
+	&.one-sixth { width: $row-width / 6; }
+
+	&.two-thirds {
+		width: ($row-width / 3) * 2;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&.three-fourths {
+		width: ($row-width / 4) * 3;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@include breakpoint(phone) {
+		width: $row-width !important;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+
+
+
+section {
+	@extend .row;
+
+	article {
+		@extend .column;
+
+		&:last-of-type {
+			padding-right: 0;
+		}
+
+		&:first-of-type {
+			padding-left: 0;
+		}
+	}
+}
+

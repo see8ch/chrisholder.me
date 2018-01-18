@@ -1,0 +1,65 @@
+body {
+	font-family: $serif;
+	font-size: 1.025rem;
+	font-weight: 300;
+	color: $mid-gray;
+	line-height: 1.7;
+}
+
+
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+	font-family: $sans-serif;
+	font-weight: 300;
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+	color: $dark-blue;
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 1.9rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.9rem; }
+
+.section-header {
+	margin-bottom: 0.7rem;
+}
+
+.underline {
+	padding-bottom: 0.3rem;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid $light-gray;
+}
+
+
+
+// Paragraphs
+p {
+	margin-bottom: 1rem;
+
+	+ h1, + h2, + h3, + h4, + h5, + h6 {
+		margin-top: 2rem;
+	}
+}
+
+
+
+// Links
+a {
+	color: $blue;
+	text-decoration: none;
+	@include ease;
+}
+
+
+
+// Lists
+ul, ol {
+	margin-left: 1.3rem;
+
+	li {}
+}

@@ -1,0 +1,215 @@
+// OUTLINE LAYOUT
+//@import 'partials/_view-layout.scss';
+
+
+// ==========================================================================
+// Main author styles
+// ==========================================================================
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+.display {
+    padding: 1.875em; // 35/16
+}
+
+input {border-radius:0;}
+.wrapper {
+	margin: 0 auto;
+	float: none;
+}
+
+.notice {
+	color:$R3;
+	margin-top:2px;
+	text-align:center;
+
+	@include epic-sides(){
+			background:$Y3;
+	};
+
+	span {margin-left:15px; }
+}
+
+
+
+// ==========================================================================
+// Homepage Styles
+// ==========================================================================
+
+.feature {
+	padding:30px 0 50px 0;
+
+	a {
+		color:$T2;
+
+		&:hover {color:$P3;}
+	}
+
+	.feature-icon {
+		text-align:center;
+
+		img {width:100%;}
+
+		p {margin:0;}
+	}
+
+	.feature-copy {
+		padding-right:30px;
+		color:$G4;
+
+		h1 {
+			font-size:44px;
+			margin-bottom:0;
+			margin-top:5px;
+			text-shadow:3px 3px 0 $T3;
+		}
+
+		p {
+			margin-top:0;
+			font-size: 1.3em;
+		}
+
+		a {@include shadow-button(orange, right, 15px, 35%);}
+	}
+}
+
+// Sign-Up
+.signup-module {
+	padding-bottom:50px;
+	text-align:center;
+	background: $T4;
+	color:$G4;
+
+	@include epic-sides(){
+   	background: $T4;
+	};
+
+	h3 {
+		font-size:35px;
+		margin-bottom:23px;
+	}
+}
+
+// Buttons
+.button-toggle {
+	@include toggle-button (purple, check, 25px);
+}
+
+// Email Submit
+.home-signup-email {
+	margin-top:30px;
+
+//	.span10 {box-shadow:3px 3px 0 $dark-green;}
+
+	input {
+		line-height: 65px;
+		border:none;
+		padding:0;
+		margin:0;
+
+		font-size:25px;
+		color:$G2;
+		@extend %ms5;
+	}
+
+	.home-email-input {
+		width:85%;
+		float:left;
+
+		text-indent:20px;
+	}
+
+	.home-signup-button {
+		width:15%;
+		float:right;
+		background:$P4;
+		color:$G4;
+		text-shadow:2px 2px 0 $P3;
+
+		@extend %ms5;
+
+		@include transition (all 400ms ease-in-out);
+
+		&:hover {
+			background-color: $P3;
+			text-shadow:2px 2px 0 $P2;
+//			box-shadow:3px 3px 0 $P2;
+		}
+	}
+}
+
+// ==========================================================================
+// Signup Page Styles
+// ==========================================================================
+
+$profile-wrapper-confirm: 40px;
+
+.signup-confirmation-photo {
+	text-align:center;
+	z-index:2;
+	position:absolute;
+	margin-top:$profile-wrapper-confirm;
+
+	img {
+		width:180px;
+		border:10px solid white;
+		box-shadow:2px 2px 4px $S4;
+     @include transition (all 400ms ease-in-out);
+
+		&:hover {}
+	}
+}
+
+.signup-confirmation-wrapper {
+	padding:50px 0 25px 0;
+	background:$G4;
+	margin-top:$profile-wrapper-confirm * 4.5;
+
+	.span5 {padding:0 30px;}
+
+	label {
+		display:block;
+		margin-top:22px;
+		margin-bottom:5px;
+		color:$T4;
+		@extend %ms7;
+	}
+
+	input {
+		width:100%;
+		line-height:35px;
+		text-indent: 10px;
+		@extend %ms5;
+	}
+}
+
+.confirm-button {
+	border:none;
+	margin:25px auto 0 auto;
+
+	@include shadow-button(purple, none, 15px, 50% !important);
+}
+
+// ==========================================================================
+// Footer Styles
+// ==========================================================================
+
+.footer {
+	text-align: center;
+
+	h5 {margin-bottom:0;}
+
+	h6 {margin-top:10px;}
+}
+
+
+// ==========================================================================
+// Toys
+// ==========================================================================
+
+.first {padding-right:0 !important;}
+.last {padding-left:0 !important;}
+

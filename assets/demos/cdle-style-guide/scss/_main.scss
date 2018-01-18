@@ -1,0 +1,1289 @@
+// ==========================================================================
+// Main author styles
+// ==========================================================================
+
+body {
+    font-size: 21px;
+    background: $bg-blue;
+
+    &.web {
+        background: $bg-blue;
+    }
+    &.print {
+        background: $bg-red;
+    }
+    &.voice {
+        background: $bg-yellow;
+    }
+}
+.masthead,
+.nav-main {
+    a {
+        color: #fff;
+    }
+}
+.masthead {
+    @include gradient(#192034,#050c23);
+}
+.logo {
+    position: relative;
+    z-index: 1;
+    float: left;
+    display: block;
+    margin: 75px 0 0 221px;
+    font-size: 16px;
+    font-family: $novecento-book;
+    font-weight: normal;
+    letter-spacing: 2px;
+
+    &:before {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        content: " ";
+        right: 100%;
+        top: -33px;
+        margin-right: 22px;
+        width: 131px;
+        height: 131px;
+        background: url(../img/cdle-icon.png) -262px 0px no-repeat;
+    }
+}
+.title,
+.section-toggle {
+    text-align: right;
+}
+.title {
+    margin: 60px 100px 1px 0;
+}
+.section-toggle {
+    margin: 0 100px 66px 0;
+
+    ul {
+        border: 1px solid #000;
+        background: #040a17;
+        padding: 2px;
+    }
+    a {
+        font-size: 14px;
+        color: #838997;
+        text-shadow: 0 -1px 1px rgba(0,0,0,.41);
+        text-transform: uppercase;
+        @include transition(all 0);
+
+        &:hover {
+            color: #fff;
+        }
+    }
+    li {
+        margin-left: 1px;
+
+        &.print:hover {
+            @include gradient(#d46545,#c73400);
+        }
+        &.web:hover {
+            @include gradient(#8a98c4,#6b7cb4);
+        }
+        &.voice:hover {
+            @include gradient(#e6b662,#dfa131);
+        }
+    }
+}
+.web .section-toggle .web {
+    @include gradient(#8a98c4,#6b7cb4);
+
+    a {
+        color: #fff;
+        cursor: default;
+    }
+}
+.print .section-toggle .print {
+    @include gradient(#d46545,#c73400);
+
+    a {
+        color: #fff;
+        cursor: default;
+    }
+}
+.voice .section-toggle .voice {
+    @include gradient(#e6b662,#dfa131);
+
+    a {
+        color: #fff;
+        cursor: default;
+    }
+}
+.nav-main {
+    background: $bg-darkblue;
+    @include box-shadow(inset 0 1px 0 #222b3d, inset 0 -1px 0 #020614, 0 1px 0 rgba(255,255,255,.05));
+
+    a {
+        color: #626d82;
+        text-shadow: 0 -1px 1px #000;
+
+        &:hover {
+            color: #929db0;
+        }
+    }
+    .new a {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            display: block;
+            content: "NEW ";
+            bottom: 100%;
+            right: 4px;
+            padding: 1px 4px;
+            font-size: 10px;
+            color: #fff;
+            text-shadow: 0 -1px 1px rgba(0,0,0,.4);
+            background: $bg-red;
+        }
+        &:after {
+            position: absolute;
+            content: " ";
+            top: 0;
+            right: 15px;
+            @include arrow(5px, #b5451e, down);
+        }
+    }
+    .inactive {
+        a {
+            color: #434e63;
+            cursor: default;
+        }
+    }
+    ul {
+        padding: 6px 0;
+    }
+}
+body.our-logo .our-logo,
+body.colors .colors,
+body.typography .typography,
+body.imagery .imagery,
+body.examples .examples,
+body.copywriting .copywriting {
+    position: relative;
+    cursor: pointer;
+    
+    a {
+        color: #929db0;
+    }
+    &:before {
+        position: absolute;
+        content: " ";
+        margin-top: 5px;
+        top: 100%;
+        left: 38%;
+        @include arrow(12px, #020614, down);
+        margin-left: -1px;
+    }
+    &:after {
+        position: absolute;
+        content: " ";
+        margin-top: 5px;
+        top: 100%;
+        left: 38%;
+        @include arrow(11px, #1c2437, down);
+    }
+
+    &:hover > .fancy {
+        display: none;
+    }
+}
+.fancy {
+    display: none;
+    position: absolute;
+    width: 117px;
+    top: 100%;
+    background: #3a4760;
+    border: 1px solid #010b1f;
+    padding: 10px;
+    @include transition(margin .2s ease-in-out);
+
+    &:before {
+        content: " ";
+        position: absolute;
+        bottom: 100%;
+        left: 45px;
+        @include arrow(11px, #010b1f, up);
+    }
+    &:after {
+        content: " ";
+        position: absolute;
+        bottom: 100%;
+        left: 46px;
+        @include arrow(10px, #3a4760, up);
+    }
+    p {
+        margin: 0;
+    }
+    img {
+        border: 1px solid #010b1f;
+    }
+}
+li:hover > .fancy {
+    display: block;
+    margin-top: 11px;
+    @include animation(appear-down .3s 1);
+}
+.inactive:hover > .fancy {
+    display: none;
+}
+.fancy.type {
+    font-size: 37px;
+    line-height: 40px;
+    color: #fff;
+
+    span {
+        display: inline-block;
+        width: 45px;
+        padding-bottom: 3px;
+        vertical-align: top;
+        text-align: center;
+        background: #1d2538;
+        border: 1px solid #010b1f;
+    }
+    .novecento {
+        font-size: 35px;
+        padding: 3px 0 0;
+        font-family: $novecento-book;
+        margin-right: 5px;
+    }
+}
+.fancy.the-colors {
+    left: -19px;
+
+    .primary .color,
+    .secondary .color {
+        display: inline-block;
+        content: " ";
+        border: 1px solid #010b1f;
+    }
+    .primary .color {
+        width: 25px;
+        height: 25px;
+        margin: 0 3px 7px;
+    }
+    .secondary {
+        max-width: 80px;
+        margin: 0 auto;
+    }
+    .secondary .color {
+        width: 8px;
+        height: 8px;
+        margin: 1px;
+    }
+
+    // Color information hover
+    .color {
+        position: relative;
+    }
+    .color-info {
+        display: none;
+        position: absolute;
+        top: 24px;
+        left: -55px;
+        width: 130px;
+        padding: 6px 10px;
+        color: #eeeeff;
+        font-size: 13px;
+        background: #1c2337;
+        z-index: 1;
+        margin-top: 11px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        strong {
+            display: inline-block;
+            width: 38px;
+            color: #929db0;
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            bottom: 100%;
+            left: 51px;
+            width: 31px;
+            height: 12px;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            bottom: 100%;
+            left: 56px;
+            margin-top: 10px;
+            @include arrow(10px, #1c2337, up);
+        }
+    }
+    .color:hover .color-info {
+        display: block;
+        @include animation(appear-down .3s 1);        
+    }
+}
+
+// Primary
+.color-1 { background: #D12A2A;} // Red
+.color-2 { background: #F4B647;} // Yellow
+.color-3 { background: #142556;} // Blue
+
+// Secondary
+.color-4 { background: #0a1226;}
+.color-5 { background: #1d2638;}
+.color-6 { background: #e64300;}
+.color-7 { background: #b04716;}
+.color-8 { background: #78852d;}
+.color-9 { background: #504e26;}
+.color-10 { background: #6f8ed4;}
+.color-11 { background: #9cadd2;}
+.color-12 { background: #061743;}
+.color-13 { background: #152b57;}
+.color-14 { background: #a02e14;}
+.color-15 { background: #c0491f;}
+.color-16 { background: #92986f;}
+.color-17 { background: #3d4f24;}
+.color-18 { background: #767f93;}
+.color-19 { background: #3d69cf;}
+
+.fancy.imagery {
+    left: -13px;
+}
+.fancy.examples {
+    left: -9px;
+}
+.page-header {
+    background: blue;
+    margin: 36px 36px 0;
+    @include box-shadow(0 3px 5px rgba(0,0,0,.42));
+}
+.content {
+    margin: 0 36px 36px;
+    background: $bg-white;
+    overflow: hidden;
+    @include box-shadow(0 3px 5px rgba(0,0,0,.42));
+
+    h2 {
+        margin-top: 1.3em;
+    }
+    p {
+        content: #4d4d4d;
+        text-shadow: 0 1px 1px rgba(255,255,255,.6);
+    }
+}
+.break {
+    margin: 0;
+    height: 22px;
+    background: $bg-grey;
+    border-top: 1px dashed #c9c9c9;
+    border-bottom: 1px dashed #c9c9c9;
+}
+.intro {
+    overflow: hidden;
+    padding: 43px;
+    background: #333;
+    @include background-size();
+}
+.intro-box {
+    max-width: 710px;
+    margin: 0 auto;
+    padding: 70px 70px 44px;
+    background: #f1f4f4;
+    background: rgba(255,255,255,.92);
+
+    h2 {
+        text-align: center;
+    }
+}
+article {
+    max-width: 596px;
+    margin: 0 auto 100px;
+}
+.page-nav {
+    position: relative;
+    top: -2px;
+    margin-bottom: 75px;
+
+    ul {
+        margin: 0 10px;
+        border-top: 5px solid #444;
+        @include border-radius-side(left, bottom, 3px);
+        @include border-radius-side(right, bottom, 3px);
+        @include box-shadow(inset 0 2px 1px -1px rgba(0,0,0,.7));
+    }
+    a {
+        padding: 7px 21px 9px;
+        color: #fff;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+        opacity: .7;
+        @include transition(all .2s ease-in-out);
+
+        &:hover {
+            color: #fff;
+            text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+            opacity: 1;
+        }
+
+        &.active {
+            position: relative;
+            color: #fff;
+            text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+            cursor: default;
+            opacity: 1;
+
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 44%;
+                content: " ";
+                @include arrow(7px, #444, down);
+            }
+        }
+    }
+}
+.web .page-nav ul {
+    background: $bg-blue;
+}
+.print .page-nav ul {
+    background: $bg-red;
+}
+.voice .page-nav ul {
+    background: $bg-yellow;
+}
+article.yup{
+    @include animation(appear .5s 1);
+}
+
+.graphic {
+    padding: 30px;
+    background: $bg-mediumgrey;
+    @include border-radius(5px);
+    @include box-shadow(inset 0 1px 2px rgba(0,0,0,.3));
+}
+
+.page-header,
+.content {
+    @include transition(margin .3s ease-in-out);
+}
+
+// Do's and don'ts
+.dos,
+.donts {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+
+    > li {
+        margin-bottom: 1.5em;
+        position: relative;
+        border-color: #3fc235;
+        
+        &:before {
+            position: absolute;
+            content: "Do";
+            top: 0;
+            right: 100%;
+            width: 50px;
+            margin-right: 15px;
+            padding: 5px 10px;
+            color: #fff;
+            font-size: 13px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            background: #3fc235;
+            border-color: #3fc235;
+            @include border-radius(2px);
+        }
+        &:after {
+            position: absolute;
+            top: 8px;
+            right: 100%;
+            margin-right: 10px;
+            content: "";
+            @include arrow(6px, red, right);
+            border-left-color: inherit;
+        }
+    }
+}
+.dos {
+
+}
+.donts {
+    > li {
+        border-color: #d11111;
+
+        &:before {
+            content: "Don't";
+            background: #d11111;
+        }
+    }
+}
+
+.footer-main {
+    overflow: hidden;
+    background: $bg-darkestgrey;
+    margin: 0 -999px;
+    padding: 0 999px;
+    font-size: 18px;
+}
+.widgets {
+    background: $bg-darkgrey;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px dashed #20232b;
+    border-bottom: 1px dashed #20232b;
+}
+.widget {
+    display: inline-block;
+    width: 275px;
+    margin: 32px;
+    text-align: left;
+    vertical-align: top;
+
+    h3 {
+        font-size: 30px;
+        margin: 25px 0;
+        font-family: $novecento-book;
+        color: #95999f;
+        text-shadow: 0 -1px 1px rgba(0,0,0,.3);
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+    a {
+        color: #565962;
+        text-shadow: 0 -1px 1px rgba(0,0,0,.3);
+
+        &:hover {
+            color: #a0a4b1;
+        }
+    }
+}
+.showcase {
+    .date {
+        position: absolute;
+        right: 100%;
+        margin-right: 16px;
+        color: #111319;
+        text-shadow: 0 1px 1px rgba(255,255,255,.1);
+        font-weight: 300;
+    }
+    li {
+        position: relative;
+        &:hover {
+            .date {
+                color: #a0a4b1;
+                text-shadow: 0 -1px 1px rgba(0,0,0,.34);
+            }
+        }
+    }
+}
+.copyright {
+    overflow: hidden;
+    padding: 15px 0;
+    color: #4d5058;
+    font-size: 11px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.36);
+
+    p {
+        margin: 8px 4px 14px;
+        text-align: center;
+    }
+}
+.download {
+    margin: 0 20px 5px 0;
+}
+.spin {
+    display: inline-block;
+    @include transform(rotate(0deg));
+    @include transition(all 1s ease-in-out);
+
+    &:hover {
+        @include transform(rotate(720deg));
+    }
+}
+.biggerizer {
+    margin: 0 -1%;
+    font-size: 0;
+
+
+    .button {
+        font-size: 20px;
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+// ==========================================================================
+// Download
+// ==========================================================================
+
+.main-download {
+    margin-bottom: 25px;
+}
+.download-container {
+    font-size: 0;
+    vertical-align: top;
+
+    img {
+        margin: 30px auto;
+        @include transform(rotate(0deg) scale(.9));
+        @include transition(all .5s ease-in-out);
+
+        &:hover {
+            @include transform(rotate(720deg) scale(1));
+        }
+    }
+    figcaption {
+        padding: 10px 20px;
+        font-size: 14px;
+        color: #474747;
+        background: $bg-grey;
+
+        strong {
+            margin-right: 20px
+        }
+        a {
+            
+        }
+        .button {
+            float: right;
+            display: inline-block;
+            margin-top: -3px;
+            margin-right: -10px;
+            padding: 4px 8px 3px;
+            font-size: 12px;
+            text-transform: uppercase;
+            border-radius: 3px;
+            //background: #0d72b2;
+        }
+    }
+    .graphic {
+        display: inline-block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        @include box-shadow(inset -1px 0 0 rgba(255,255,255,.23),inset 0 1px 2px rgba(0,0,0,.3));
+        @include border-radius-side(left, bottom, 7px);
+        @include border-radius-side(right, bottom, 7px);
+    }
+    .graphic:nth-child(odd){
+        // Left side
+        @include border-radius-side(right, top, 0);
+        @include border-radius-side(right, bottom, 0);
+
+        figcaption {
+            @include border-radius-side(left, bottom, 5px);
+            @include box-shadow(inset 3px 0 3px -3px rgba(0,0,0,.3), inset 0 -3px 3px -3px rgba(0,0,0,.3), inset -1px 0 0 rgba(255,255,255,.6));
+        }
+    }
+    .graphic:nth-child(even){
+        // Right side
+        @include border-radius-side(left, top, 0);
+        @include border-radius-side(left, bottom, 0);
+        @include box-shadow(inset 1px 0 0 rgba(0,0,0,.3),inset 0 1px 2px rgba(0,0,0,.3));
+    
+        figcaption {
+            @include border-radius-side(right, bottom, 5px);
+            @include box-shadow(inset 1px 0 0 rgba(0,0,0,.15), inset -3px 0 3px -3px rgba(0,0,0,.3), inset 0 -3px 3px -3px rgba(0,0,0,.3));
+        }
+    }
+}
+.commented {
+    color: #888;
+}
+.spec.yup {
+    @include animation(appear .5s 1);
+}
+.set {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+    th,
+    td {
+        padding: 10px 20px;
+    }
+
+    th {
+        background: $bg-blue;
+        color: #fff;
+        font-weight: $normal;
+        border: 1px solid #3b4254;
+
+        &:first-child {
+            background: transparent;
+            border: none;
+        }
+    }
+    td {
+        border: 1px solid #d5d7d7;
+        background: #fff;
+    }
+    tr {
+        > td {
+            &:first-child {
+                color: #fff;
+                text-align: left;
+                background: $bg-blue;
+                border: 1px solid #3b4254;
+            }
+        }
+    }
+}
+
+// ==========================================================================
+// Custom post content
+// ==========================================================================
+
+// Our logo
+
+.web-our-logo {
+    background: #333 url(../img/bg-intro-garden.jpg) center no-repeat;
+}
+.print-our-logo {
+    background: #333 url(../img/bg-intro-mountain.jpg) center no-repeat;
+}
+.voice-copywriting {
+    background: #333 url(../img/bg-intro-other.jpg) center no-repeat;
+    h2,
+    p {
+        font-family: $monospace;
+        font-weight: normal;
+    }
+}
+.intro {
+    @include background-size();
+}
+
+// Our colors
+
+.palette {
+    text-align: left;
+    font-size: 0px;
+    margin: 0 -1.5%;
+
+    .swatch {
+        font-size: 13px;
+        display: inline-block;
+        width: 22%;
+        margin: 2% 1.5%;
+        text-align: left;
+        background: #fff;
+        @include box-shadow(0 3px 5px rgba(0,0,0,.3));
+        @include transition(all .3s ease-in-out);
+
+        &:hover {
+            @include transform(scale(1.4));
+        }
+    }
+
+    .color {
+        width: 100%;
+        height: 80px;
+    }
+    ul {
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+    }
+    li {
+        > span {
+            display: inline-block;
+            width: 60px;
+            font-weight: $bold;
+        }
+    }
+}
+.primary {
+    margin: 0 -1.66%;
+
+    .swatch {
+        width: 30%;
+        margin: 1.66%;
+        font-size: 16px;
+
+        &:hover {
+            @include transform(none);
+        }
+    }
+    .color {
+        height: 100px;
+    }
+    ul {
+        padding: 15px;
+    }
+}
+
+// Typography
+
+.spec-example {
+    position: relative;
+    line-height: 1em;
+}
+p.spec-example {
+    line-height: 1.4em;
+
+    .element-label {
+        top: 5px;
+    }
+}
+.element-label {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    margin-right: 30px;
+    color: #888;
+    font-family: $sans;
+    font-weight: $normal;
+    font-size: 14px;
+    line-height: 1em;
+}
+.typo-fonts {
+    margin: 0;
+    color: #fff;
+}
+
+// ==========================================================================
+// Examples
+// ==========================================================================
+
+.demo {
+}
+.toggle {
+    position: relative;
+    z-index: 1;
+    display: block;
+    outline: 0;
+    margin-top: 30px;
+    padding: 6px 14px;
+    color: #dcedf5;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid darken(#495573,15%);
+    @include gradient(#6f84b4,#415d9c);
+    @include border-radius-side(right, top, 4px);
+    @include border-radius-side(left, top, 4px);
+
+    &:hover {
+        color: #fff;
+        @include gradient(#7a97da,#4e75ce);
+    }
+    &:active {
+        color: #fff;
+        @include gradient(#4e75ce,#7a97da);
+    }
+    &:visited {
+        color: #dcedf5;
+        @include gradient(#6f84b4,#415d9c);
+    }
+}
+.goodies {
+    position: relative;
+    margin: 0 0 60px;
+    padding: 45px 65px;
+    border: 1px dashed #aaa;
+    border-top-color: #fff;
+    border-top: 0;
+    background: #fff;
+    @include border-radius-side(right, bottom, 4px);
+    @include border-radius-side(left, bottom, 4px);
+    @include transition(all .5s ease-in-out);
+    @include box-shadow(0 0 0 0 #d11212);
+}
+.awesome {
+    display: inline;
+}
+.terrible {
+    display: none;
+}
+.toggled {
+    color: #fff;
+    border-color: darken(#d11212, 15%);
+    @include gradient(#d11212, darken(#d11212, 4%));
+
+    &:hover {
+        @include gradient(#e41313, darken(#e41313, 4%));
+    }
+    &:active {
+        @include gradient(darken(#e41313, 4%), #e41313);
+    }
+
+    .awesome {
+        display: none;
+    }
+    .terrible {
+        display: inline;
+        background: transparent;
+    }
+
+    ~ .goodies {
+        border: 1px solid darken(#d11212, 15%);
+        border-top: 0;
+        //@include box-shadow(inset 0 0 6px 0px rgba(0,0,0,.3),inset 0 0 0 15px #d11212);
+        @include box-shadow(inset 0 0 6px 0px rgba(0,0,0,.3), inset 30px 0 0 -15px #d11212, inset 0 -30px 0 -15px #d11212, inset -30px 0 0 -15px #d11212);
+    }
+}
+.click-me {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 38px;
+        @include arrow(7px, #b5451e, down);
+    }
+    &:after {
+        content: "Click these!";
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        width: 90px;
+        padding: 4px 0 3px;
+        margin-bottom: 6px;
+        color: #fff;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+        background: #b5451e;
+        @include border-radius(2px);
+    }
+}
+
+
+// WHITE SPACE IS AWESOME
+.space {
+    padding: 45px 65px;
+}
+.toggled ~ .space {
+    padding: 3px 18px 18px;
+}
+
+// PATTERNS ARE BAD
+.pattern {
+    background: #fff url(../img/cdle-logo-grey.png) center center no-repeat;
+    width: 100%;
+    height: 172px;
+}
+.toggled ~ .pattern {
+    background-repeat: repeat;
+}
+
+// WINDOW
+.window {
+    padding: 45px 65px 60px;
+
+    .yep {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+    .nope {
+        display: none;
+    }
+}
+.toggled ~ .window {
+    .yep{
+        display: none;
+    }
+    .nope {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+}
+
+// COMPLEX PHOTO BACKGROUNDS
+.complexbg {
+    padding: 0;
+    height: 230px;
+    background: url(../img/cdle-logo-complexbg.jpg) center top no-repeat;
+}
+.toggled ~ .complexbg {
+    background-position: center bottom;
+}
+
+// CORRECT LOGO COLORS
+.logo-colors {
+    padding: 45px 65px 60px;
+
+    .yep {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+    .nope {
+        display: none;
+    }
+}
+.toggled ~ .logo-colors {
+    .yep{
+        display: none;
+    }
+    .nope {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+}
+
+// CORRECT LOGO COLORS
+.bevel {
+    padding: 45px 65px 60px;
+
+    .yep {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+    .nope {
+        display: none;
+    }
+}
+.toggled ~ .bevel {
+    .yep{
+        display: none;
+    }
+    .nope {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+}
+
+// SKEWED LOGO
+.warped {
+    padding: 45px 65px 60px;
+
+    .yep {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+    .nope {
+        display: none;
+    }
+}
+.toggled ~ .warped {
+    .yep{
+        display: none;
+    }
+    .nope {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+}
+
+// TEXT ADDED TO THE LOGO
+.added-text {
+    padding: 45px 65px 60px;
+
+    .yep {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+    .nope {
+        display: none;
+    }
+}
+.toggled ~ .added-text {
+    .yep{
+        display: none;
+    }
+    .nope {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+}
+
+// LOGO WITH CUSTOM FONT
+.custom-font {
+    padding: 45px 65px 60px;
+
+    .yep {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+    .nope {
+        display: none;
+    }
+}
+.toggled ~ .custom-font {
+    .yep{
+        display: none;
+    }
+    .nope {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+}
+
+// LINE HEIGHT
+.line-height {
+    padding: 5px 35px;
+    font-size: 16px;
+
+    .yep {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+    .nope {
+        display: none;
+        line-height: 2em;
+
+        p {
+            &:first-child {
+                line-height: 1em;
+            }
+        }
+    }
+}
+.toggled ~ .line-height {
+    padding: 5px 50px 20px;
+
+    .yep{
+        display: none;
+    }
+    .nope {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+}
+
+// OVERUSE OF BOLD UNDERLINE ETC
+.overuse {
+    padding: 5px 35px;
+    font-size: 16px;
+
+    .yep {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+    .nope {
+        display: none;
+    }
+}
+.toggled ~ .overuse {
+    padding: 5px 50px 20px;
+
+    .yep{
+        display: none;
+    }
+    .nope {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+}
+
+// BAD FONTS
+.bad-fonts {
+    padding: 0;
+    font-size: 16px;
+    overflow: hidden;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: block;
+        margin: 0;
+        padding: 10px 46px;
+        background: #f0f2f7;
+        border-top: 1px solid #f9fafc;
+        border-bottom: 1px solid #dadee6;
+    }
+
+    .yep {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+    .nope {
+        display: none;
+    }
+}
+.toggled ~ .bad-fonts {
+    padding: 0 0 15px;
+
+    li {
+        display: block;
+        margin: 0px 15px;
+        padding: 10px 31px;
+        background: #f0f2f7;
+    }
+
+    .yep{
+        display: none;
+    }
+    .nope {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+}
+
+// LETTER SPACING
+.letter-spacing {
+    padding: 5px 35px;
+    font-size: 16px;
+
+    .yep {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+    .nope {
+        display: none;
+        letter-spacing: .2em;
+
+        p {
+            &:first-child {
+                letter-spacing: -.1em;
+            }
+        }
+    }
+}
+.toggled ~ .letter-spacing {
+    padding: 5px 50px 20px;
+
+    .yep{
+        display: none;
+    }
+    .nope {
+        display: block;
+        @include animation(appear 1s 1);
+    }
+}
+
+// Chris
+
+.cooltoplogo {
+    margin:3em 0 2em 0;
+
+    img {
+        margin-bottom:1em;
+    }
+}
+
+.logoslookingcool {
+    margin-bottom:2.3em;
+
+    img {
+        width:25%;
+        height:auto;
+        position:relative;
+        float:left;
+        margin-right:1em;
+        margin-left:-1em;
+    }
+
+    p {
+        width:75%;
+        position:relative;
+        float:left;
+        margin-top:1em;
+    }
+}
