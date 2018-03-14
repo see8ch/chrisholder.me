@@ -1,6 +1,7 @@
 /* #Reset
 ================================================================================================= */
 * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -200,7 +201,7 @@ ul, ol {
   margin-left: 1.3rem;
 }
 
-.portfolio-post ul li a, .more-button, .skills-list li {
+.portfolio-post ul li a, .more-button, .skills-list li, .social-list li a {
   margin-right: 0.5rem;
   padding: 0.5rem 0.75rem;
   border: 1px solid #888888;
@@ -212,31 +213,31 @@ ul, ol {
   text-transform: uppercase;
   transition: all 333ms ease-in-out;
 }
-.portfolio-post ul li a span, .more-button span, .skills-list li span {
+.portfolio-post ul li a span, .more-button span, .skills-list li span, .social-list li a span {
   margin-left: 0.25rem;
   margin-top: 0.35rem;
   color: #888888;
   transition: all 333ms ease-in-out;
 }
-.portfolio-post ul li a:hover, .more-button:hover, .skills-list li:hover {
+.portfolio-post ul li a:hover, .more-button:hover, .skills-list li:hover, .social-list li a:hover {
   color: #27a9e1;
   border-color: #27a9e1;
 }
-.portfolio-post ul li a:hover span, .more-button:hover span, .skills-list li:hover span {
+.portfolio-post ul li a:hover span, .more-button:hover span, .skills-list li:hover span, .social-list li a:hover span {
   color: #27a9e1;
 }
-.portfolio-post ul li a.preview-toggle, .preview-toggle.more-button, .skills-list li.preview-toggle {
+.portfolio-post ul li a.preview-toggle, .preview-toggle.more-button, .skills-list li.preview-toggle, .social-list li a.preview-toggle {
   color: #27a9e1;
   border-color: #27a9e1;
 }
-.portfolio-post ul li a.preview-toggle span, .preview-toggle.more-button span, .skills-list li.preview-toggle span {
+.portfolio-post ul li a.preview-toggle span, .preview-toggle.more-button span, .skills-list li.preview-toggle span, .social-list li a.preview-toggle span {
   color: #27a9e1;
 }
-.portfolio-post ul li a.preview-toggle.active, .preview-toggle.active.more-button, .skills-list li.preview-toggle.active {
+.portfolio-post ul li a.preview-toggle.active, .preview-toggle.active.more-button, .skills-list li.preview-toggle.active, .social-list li a.preview-toggle.active {
   color: #FD9638;
   border-color: #FD9638;
 }
-.portfolio-post ul li a.preview-toggle.active span:before, .preview-toggle.active.more-button span:before, .skills-list li.preview-toggle.active span:before {
+.portfolio-post ul li a.preview-toggle.active span:before, .preview-toggle.active.more-button span:before, .skills-list li.preview-toggle.active span:before, .social-list li a.preview-toggle.active span:before {
   content: '\f404';
   color: #FD9638;
 }
@@ -372,11 +373,11 @@ footer .mtn-poly {
   color: #27a9e1;
 }
 
-.skills-list, .experiment-list, .education-list, .press-list {
+.skills-list, .social-list, .experiment-list, .education-list, .press-list {
   margin-left: 0;
   margin-bottom: 3rem;
 }
-.skills-list li, .experiment-list li, .education-list li, .press-list li {
+.skills-list li, .social-list li, .experiment-list li, .education-list li, .press-list li {
   list-style: none;
   display: block;
 }
@@ -385,12 +386,40 @@ footer .mtn-poly {
   margin-bottom: 0.75rem;
   border-color: #e3e3e3;
 }
+.skills-list li a {
+  color: #888888;
+}
+.skills-list li span {
+  position: relative;
+  top: -0.25rem;
+  margin-right: 0.35rem;
+  color: #27a9e1;
+}
 .skills-list li:hover {
   color: #FD9638;
   border-color: #FD9638;
 }
 .skills-list li:hover span {
   color: #FD9638;
+}
+
+.social-list li {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.social-list li a {
+  display: block;
+  color: #888888;
+  border-color: #e3e3e3;
+}
+.social-list li a span {
+  position: relative;
+  top: -0.25rem;
+  margin-right: 0.4rem;
+  color: #888888;
+}
+.social-list li a:hover {
+  color: #27a9e1;
 }
 
 .experiment-list li, .education-list li, .press-list li {

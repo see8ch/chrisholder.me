@@ -298,86 +298,93 @@
 
 
 		<article class="one-third">
+			<h3 class="section-header">Social</h3>
+			<ul class="social-list">
+				<li><a href="http://instagram.com/chrislholder" target="_blank"><span class="genericon genericon-instagram"></span>Instagram</a></li>
+				<li><a href="http://linkedin.com/in/chrislholder" target="_blank"><span class="genericon genericon-linkedin"></span>LinkedIn</a></li>
+				<li><a href="http://unsplash.com/@chrisholder" target="_blank"><span class="genericon genericon-gallery"></span>Unsplash</a></li>
+			</ul>
+
 			<h3 class="section-header">Skills</h3>
-				<ul class="skills-list">
-					<li>UI/UX Design</li>
-					<li>HTML + PHP</li>
-					<li>CSS + SCSS</li>
-					<li>JS + jQuery + AJAX</li>
-					<li>WordPress</li>
-					<li>API + JSON</li>
-					<li>Git + CLI</li>
-					<li>Node + Grunt</li>
-					<li>Art Direction</li>
-					<li>IA + Strategy</li>
-					<li>Photography</li>
-				</ul>
+			<ul class="skills-list">
+				<li>UI/UX Design</li>
+				<li>HTML + PHP</li>
+				<li>CSS + SCSS</li>
+				<li>JS + jQuery + AJAX</li>
+				<li>WordPress</li>
+				<li>API + JSON</li>
+				<li>Git + CLI</li>
+				<li>Node + Grunt</li>
+				<li>Art Direction</li>
+				<li>IA + Strategy</li>
+				<li>Photography</li>
+			</ul>
 
-				<h3 class="section-header">Resume</h3>
-				<ul class="experiment-list">
-					<li>
-						<h5>ParkDev</h5>
-						<h6>Creative Director + Lead Developer</h6>
-						<p>2009-Current // Steamboat Springs, CO</p>
-					</li>
-					<li>
-						<h5>New Why Web</h5>
-						<h6>Freelance Developer + Designer</h6>
-						<p>2014-Current // Los Angeles, CA</p>
-					</li>
-					<li>
-						<h5>State of Colorado</h5>
-						<h6>UI/UX Designer + Developer</h6>
-						<p>2013 // Denver, CO</p>
-					</li>
+			<h3 class="section-header">Resume</h3>
+			<ul class="experiment-list">
+				<li>
+					<h5>ParkDev</h5>
+					<h6>Creative Director + Lead Developer</h6>
+					<p>2009-Current // Steamboat Springs, CO</p>
+				</li>
+				<li>
+					<h5>New Why Web</h5>
+					<h6>Freelance Developer + Designer</h6>
+					<p>2014-Current // Los Angeles, CA</p>
+				</li>
+				<li>
+					<h5>State of Colorado</h5>
+					<h6>UI/UX Designer + Developer</h6>
+					<p>2013 // Denver, CO</p>
+				</li>
 
-					<li>
-						<h5>Cinearc</h5>
-						<h6>Freelance Developer + Designer</h6>
-						<p>2012-2013 // Denver, CO</p>
-					</li>
-					<li>
-						<h5>Triune</h5>
-						<h6>Design Intern</h6>
-						<p>2009 // St. Louis, MO</p>
-					</li>
-					<li>
-						<h5>Jacquin Studio</h5>
-						<h6>Product Photographer</h6>
-						<p>2007-2009 // St. Louis, MO</p>
-					</li>
-				</ul>
+				<li>
+					<h5>Cinearc</h5>
+					<h6>Freelance Developer + Designer</h6>
+					<p>2012-2013 // Denver, CO</p>
+				</li>
+				<li>
+					<h5>Triune</h5>
+					<h6>Design Intern</h6>
+					<p>2009 // St. Louis, MO</p>
+				</li>
+				<li>
+					<h5>Jacquin Studio</h5>
+					<h6>Product Photographer</h6>
+					<p>2007-2009 // St. Louis, MO</p>
+				</li>
+			</ul>
 
-				<h3 class="section-header">Education</h3>
-				<ul class="education-list">
-					<li>
-						<h5>ROCKY MOUNTAIN COLLEGE OF ART AND DESIGN</h5>
-						<h6>BFA Graphic Design</h6>
-						<p>2011 // Denver, CO</p>
-					</li>
-					<li>
-						<h5>University of Missouri</h5>
-						<h6>AAS Graphic Design</h6>
-						<p>2009 // St. Louis, MO</p>
-					</li>
-				</ul>
+			<h3 class="section-header">Education</h3>
+			<ul class="education-list">
+				<li>
+					<h5>ROCKY MOUNTAIN COLLEGE OF ART AND DESIGN</h5>
+					<h6>BFA Graphic Design</h6>
+					<p>2011 // Denver, CO</p>
+				</li>
+				<li>
+					<h5>University of Missouri</h5>
+					<h6>AAS Graphic Design</h6>
+					<p>2009 // St. Louis, MO</p>
+				</li>
+			</ul>
 
-				<h3 class="section-header">Press</h3>
-				<ul class="press-list">
-					<li>
-						<h6>Making Colorado</h6>
-						<h5><a href="http://www.thedenveregotist.com/news/local/2013/may/15/making-colorado-creative-team-has-been-chosen" target="_blank">The Egotist<span class="genericon genericon-external"></span></a></h5>
-					</li>
-					<li>
-						<h6>Student Spotlight</h6>
-						<h5><a href="http://www.thedieline.com/blog/2009/12/7/student-spotlight-xocolatl.html" target="_blank">The Dieline<span class="genericon genericon-external"></span></a></h5>
-					</li>
-					<li>
-						<h6>JustinCase</h6>
-						<h5><a href="http://www.yankodesign.com/2011/04/15/iphone-case-fight-for-safe-sex/" target="_blank">Yanko Design<span class="genericon genericon-external"></span></a></h5>
-						<h5><a href="http://www.forevergeek.com/2011/04/the-justincase-protect-your-iphone-and-your-private-parts/" target="_blank">Forever Geek<span class="genericon genericon-external"></span></a></h5>
-					</li>
-				</ul>
+			<h3 class="section-header">Press</h3>
+			<ul class="press-list">
+				<li>
+					<h6>Making Colorado</h6>
+					<h5><a href="http://www.thedenveregotist.com/news/local/2013/may/15/making-colorado-creative-team-has-been-chosen" target="_blank">The Egotist<span class="genericon genericon-external"></span></a></h5>
+				</li>
+				<li>
+					<h6>Student Spotlight</h6>
+					<h5><a href="http://www.thedieline.com/blog/2009/12/7/student-spotlight-xocolatl.html" target="_blank">The Dieline<span class="genericon genericon-external"></span></a></h5>
+				</li>
+				<li>
+					<h6>JustinCase</h6>
+					<h5><a href="http://www.yankodesign.com/2011/04/15/iphone-case-fight-for-safe-sex/" target="_blank">Yanko Design<span class="genericon genericon-external"></span></a></h5>
+					<h5><a href="http://www.forevergeek.com/2011/04/the-justincase-protect-your-iphone-and-your-private-parts/" target="_blank">Forever Geek<span class="genericon genericon-external"></span></a></h5>
+				</li>
+			</ul>
 		</article>
 	</section>
 
@@ -385,7 +392,7 @@
 	<section class="contact-section">
 		<h2>Let's talk</h2>
 		<p>I am currently accepting new projects. Please get in touch if you would like to work together or have any questions about my work!</p>
-		<h6><a href="mailto:chrislholder@gmail.com">chrislholder@gmail.com</a> <span>//</span> <a href="tel:3147803252">314.780.3252</a> <span>//</span> <a href="http://instagram.com/chrislholder" target="_blank">@chrislholder</a></h6>
+		<h6><a href="mailto:chrislholder@gmail.com">chrislholder@gmail.com</a> <span>//</span> <a href="http://instagram.com/chrislholder" target="_blank">@chrislholder</a></h6>
 	</section>
 
 
