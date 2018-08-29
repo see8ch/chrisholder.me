@@ -6,6 +6,8 @@ $row-margin: ((100vw - $row-width) / 2);
 $row-spacing: 7vh;
 $column-padding: 2vw;
 
+$row-width-mobile: 80vw;
+$row-margin-mobile: ((100vw - $row-width-mobile) / 2);
 
 .row {
 	float: left;
@@ -15,6 +17,12 @@ $column-padding: 2vw;
 	margin-bottom: $row-spacing;
 	// max-width: $row-max-width;
 	@include clearfix;
+
+	@include breakpoint(phone) {
+		width: $row-width-mobile !important;
+		margin-right: $row-margin-mobile;
+		margin-left: $row-margin-mobile;
+	}
 }
 
 .column {
@@ -41,7 +49,7 @@ $column-padding: 2vw;
 	}
 
 	@include breakpoint(phone) {
-		width: $row-width !important;
+		width: $row-width-mobile !important;
 		padding-left: 0;
 		padding-right: 0;
 	}

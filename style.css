@@ -79,6 +79,13 @@ img {
   content: '';
   display: table;
 }
+@media (max-width: 600px) {
+  .row, section {
+    width: 80vw !important;
+    margin-right: 10vw;
+    margin-left: 10vw;
+  }
+}
 
 .column, section article {
   float: left;
@@ -120,7 +127,7 @@ img {
 }
 @media (max-width: 600px) {
   .column, section article {
-    width: 72vw !important;
+    width: 80vw !important;
     padding-left: 0;
     padding-right: 0;
   }
@@ -262,8 +269,14 @@ header .site-description {
   color: #0e4861;
   font-weight: 400;
 }
-header + section {
-  margin-bottom: 10vh;
+header + section p {
+  font-size: 1.1rem;
+}
+@media (max-width: 600px) {
+  header {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
 }
 
 footer {
@@ -297,7 +310,7 @@ footer .mtn-poly {
   color: #27a9e1;
 }
 .portfolio-post p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 .portfolio-post .brag {
   font-style: italic;

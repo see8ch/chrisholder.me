@@ -1,5 +1,5 @@
 <?php
-	$pageTitle = 'Chris Holder // User Friendly Designer + Developer';
+	$pageTitle = 'Chris Holder // User-Friendly Designer + Developer';
 	$pageID = 'home';
 
 	// Base 64 Code for Preload Image Sequence
@@ -16,9 +16,8 @@
 
 
 	<section>
-		<h2 class="underline">Hello!</h2>
-		<p>I’m a remote designer with strong development skills and a creative mindset. From research to strategy to launch, I focus on stimulating audience engagement with high quality, user-friendly responsive designs built on sturdy frameworks and custom platforms that create rewarding experiences, for both my clients and their customers. I am very comfortable learning new software, languages, workflows, etc. and happily welcome new challenges.</p>
-		<p>Please take a minute to view some of my recent work and experience below. If you see something you like and want to work together, send me a <a href="mailto:chrislholder@gmail.com">message</a>!</p>
+		<p>Hello! I’m a (mostly remote) designer and full stack developer based in Steamboat Springs, Colorado. I focus on user experience, usability, and like to work with outdoor brands and companies that focus on the environment, education, and sustainability.</p>
+		<p>If you would like to work together, send me a <a href="mailto:chrislholder@gmail.com">message</a>!</p>
 	</section>
 
 
@@ -27,6 +26,22 @@
 
 		<article class="two-thirds">
 			<h3 class="section-header">Recent Work</h3>
+
+			<!-- Braintree -->
+			<div class="portfolio-post">
+				<h4 class="project-title">Braintree (Paypal)</h4>
+	 			<h6 class="project-meta">WordPress Design & Development // <span>San Francisco, CA</span></h6>
+				<p>Interactive microsite that visualizes and compares the potentials of online payment platforms by region and country and helps user identify a suitable market.</p>
+				<ul>
+					<li>
+						<a class="preview-toggle" href="#">Preview<span class="genericon genericon-show"></span></a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.braintreepayments.com/global-payments-report">Website<span class="genericon genericon-external"></span></a>
+					</li>
+				</ul>
+				<img class="preview" src="<?php echo $preloadIMG; ?>" data-src="assets/img/work/braintree-preview.png">
+			</div>
 
 			<!-- Galvanize -->
 			<div class="portfolio-post">
@@ -45,7 +60,7 @@
 			</div>
 
 			<!-- Swallow Hill -->
-			<div class="portfolio-post">
+<!-- 			<div class="portfolio-post">
 				<h4 class="project-title">Swallow Hill Music</h4>
 	 			<h6 class="project-meta">WordPress Development // <span>Denver, CO</span></h6>
 				<p>Custom theme development for a non-profit music school serving children and adults in Colorado.</p>
@@ -59,7 +74,7 @@
 				</ul>
 
 				<img class="preview" src="<?php echo $preloadIMG; ?>" data-src="assets/img/work/swallowhill-preview.png">
-			</div>
+			</div> -->
 
 			<!-- New Buildings Institute -->
 			<div class="portfolio-post">
@@ -164,14 +179,8 @@
 			</div>
 
 
-
-
-			<!-- // *** ARCHIVE *** // -->
-
-
-
 			<!-- Google -->
-			<div class="portfolio-post archive">
+			<div class="portfolio-post">
 				<h4 class="project-title">Google</h4>
 	 			<h6 class="project-meta">Presentation Design // <span>Denver, CO</span></h6>
 				<p>Presentation slides for the keynote speakers, demos and intermission periods for the launch of Google Clockwork (renamed to Android Wear), the OS for wearables.</p>
@@ -183,6 +192,12 @@
 
 				<img class="preview" src="<?php echo $preloadIMG; ?>" data-src="assets/img/work/google-preview.png">
 			</div>
+
+
+
+				<!-- // *** ARCHIVE *** // -->
+
+
 
 			<!-- Isaacson School of New Media -->
 			<div class="portfolio-post archive">
@@ -328,8 +343,8 @@
 					<p>2009-Current // Steamboat Springs, CO</p>
 				</li>
 				<li>
-					<h5>New Why Web</h5>
-					<h6>Freelance Developer + Designer</h6>
+					<h5>New Why</h5>
+					<h6>Developer + UX Designer</h6>
 					<p>2014-Current // Los Angeles, CA</p>
 				</li>
 				<li>
